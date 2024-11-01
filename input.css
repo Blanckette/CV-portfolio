@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    background-color: rgba(110, 144, 197, 0.56);
+}
+
+.ephesis-regular {
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.bg-footer {
+    background-color: rgb(44, 60, 85);
+}
