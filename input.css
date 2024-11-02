@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
+    --bg-color-main: rgba(241, 239, 239, 1);
     --footer-color: rgb(44, 60, 85);
     --sky-blue:  rgba(110, 144, 197, 0.56);
     --dark-violet: rgba(50, 36, 57, 1);
+}
+
+body {
+    background-color: var(--bg-color-main);
 }
 
 .hero {
