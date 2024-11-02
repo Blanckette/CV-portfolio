@@ -5,6 +5,7 @@
 :root {
     --footer-color: rgb(44, 60, 85);
     --sky-blue:  rgba(110, 144, 197, 0.56);
+    --dark-violet: rgba(50, 36, 57, 1);
 }
 
 .hero {
@@ -19,4 +20,8 @@
 
 .bg-footer {
     background-color: var(--footer-color);
+}
+
+.skill-title {
+    color: var(--dark-violet);
 }
