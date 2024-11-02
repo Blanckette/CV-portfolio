@@ -12,11 +12,22 @@
     background-color: var(--sky-blue);
 }
 
+/* handwriting */
 .ephesis-regular {
     font-family: "Ephesis", cursive;
     font-weight: 400;
     font-style: normal;
   }  
+
+/* all text */
+.epilogue-main {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
 
 .bg-footer {
     background-color: var(--footer-color);
