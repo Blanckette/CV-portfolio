@@ -678,12 +678,20 @@ video {
   border-color: rgb(2 6 23 / var(--tw-border-opacity));
 }
 
+.fill-slate-950 {
+  fill: #020617;
+}
+
 .fill-zinc-100 {
   fill: #f4f4f5;
 }
 
 .stroke-slate-50 {
   stroke: #f8fafc;
+}
+
+.stroke-slate-950 {
+  stroke: #020617;
 }
 
 .stroke-zinc-100 {
@@ -802,6 +810,10 @@ video {
   transition-duration: 200ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -830,17 +842,17 @@ video {
   color: var(--dark-violet);
 }
 
-.links {
+.links-white {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
-  & .undeline-links {
+  & .undeline-links-white {
     text-decoration: none;
     display: inline-block;
     position: relative;
   }
-  & .undeline-links::after {
+  & .undeline-links-white::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -852,15 +864,36 @@ video {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  & .undeline-links:hover::after {
+  & .undeline-links-white:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 }
 
-/* .social-icon:hover {
-    fill: aquamarine;
-} */
+.links-black {
+  display: flex;
+  & .undeline-links-black {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  & .undeline-links-black::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  & .undeline-links-black:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
 
 /* a {
     position: relative;
@@ -889,6 +922,12 @@ video {
     transform: scaleX(1);
   } */
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -899,113 +938,113 @@ video {
   stroke: #d97706;
 }
 
+.hover\:stroke-sky-900:hover {
+  stroke: #0c4a6e;
+}
+
 .group:hover .group-hover\:fill-amber-600 {
   fill: #d97706;
 }
 
-.group:hover .group-hover\:fill-red-600 {
-  fill: #dc2626;
+.group:hover .group-hover\:fill-sky-900 {
+  fill: #0c4a6e;
 }
 
-.group:hover .group-hover\:stroke-amber-600 {
-  stroke: #d97706;
-}
-
-@media (min-width: 768px) {
-  .md\:mt-4 {
+@media (min-width: 640px) {
+  .sm\:mt-4 {
     margin-top: 1rem;
   }
 
-  .md\:block {
+  .sm\:block {
     display: block;
   }
 
-  .md\:flex {
+  .sm\:flex {
     display: flex;
   }
 
-  .md\:grid {
+  .sm\:grid {
     display: grid;
   }
 
-  .md\:hidden {
+  .sm\:hidden {
     display: none;
   }
 
-  .md\:w-fit {
+  .sm\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
   }
 
-  .md\:basis-1\/3 {
+  .sm\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
 
-  .md\:basis-2\/3 {
+  .sm\:basis-2\/3 {
     flex-basis: 66.666667%;
   }
 
-  .md\:grid-cols-2 {
+  .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-2 {
+  .sm\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:flex-row {
+  .sm\:flex-row {
     flex-direction: row;
   }
 
-  .md\:place-content-around {
+  .sm\:place-content-around {
     place-content: space-around;
   }
 
-  .md\:items-center {
+  .sm\:items-center {
     align-items: center;
   }
 
-  .md\:items-baseline {
+  .sm\:items-baseline {
     align-items: baseline;
   }
 
-  .md\:gap-10 {
+  .sm\:gap-10 {
     gap: 2.5rem;
   }
 
-  .md\:gap-8 {
+  .sm\:gap-8 {
     gap: 2rem;
   }
 
-  .md\:self-center {
+  .sm\:self-center {
     align-self: center;
   }
 
-  .md\:px-24 {
+  .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 
-  .md\:py-12 {
+  .sm\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
-  .md\:py-8 {
+  .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  .md\:text-center {
+  .sm\:text-center {
     text-align: center;
   }
 
-  .md\:text-6xl {
+  .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
   }
 
-  .md\:text-lg {
+  .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
