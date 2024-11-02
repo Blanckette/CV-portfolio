@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --footer-color: rgb(44, 60, 85);
+    --sky-blue:  rgba(110, 144, 197, 0.56);
+}
+
 .hero {
-    background-color: rgba(110, 144, 197, 0.56);
+    background-color: var(--sky-blue);
 }
 
 .ephesis-regular {
@@ -13,5 +18,5 @@
   }  
 
 .bg-footer {
-    background-color: rgb(44, 60, 85);
+    background-color: var(--footer-color);
 }

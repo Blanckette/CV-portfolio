@@ -17,27 +17,27 @@
       </h1>
     </div>
     <nav>
-      <div class="hidden">
+      <div class="hidden md:flex gap-4">
         <a href="">About</a>
         <a href="">Work</a>
         <a href="">Contact</a>
       </div>
-      <div>
+      <div class="md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
         </svg>
       </div>
     </nav>
   </header>
-  <section class="hero flex flex-col items-center py-4 border-t border-b border-solid border-slate-950">
-    <div class="flex flex-col w-28">
+  <section class="hero flex flex-col items-center py-4 border-t border-b border-solid border-slate-950 md:flex-row md:px-24">
+    <div class="flex flex-col w-28 md:basis-1/3">
       <img class="h-36 w-fit border-2 border-solid border-amber-500" src="assets/Photo-id.png" alt="">
       <div>
         <h2 class="py-1 ">Blanka Adamus</h2>
         <p class="text-xs font-thin">front-end developer / graphic designer / artist</p>
       </div>
     </div>
-    <div class="flex flex-col px-10 py-6">
+    <div class="flex flex-col px-10 py-6 md:basis-2/3">
       <p class="ephesis-regular text-4xl font-extralight">Hi !</p>
       <p class="font-extralight">I am an aspiring <strong>front-end developer</strong> 👩🏼‍💻 artist 👩🏼‍🎨 and a cat lover 🐈 .
           When I'm not in front of my computer, you can find me in front of my easel 🎨 or trying to discover hidden gems while traveling 🧳.
@@ -46,202 +46,204 @@
   </section>
   <section class="py-6 px-10">
     <h2 class="text-4xl font-semibold capitalize">My Skills & Talents</h2>
-    <div class="py-4 flex flex-col gap-4">
-      <p class="text-2xl font-medium text-amber-500">01.</p>
-      <p class="text-2xl">Front-end development</p>
-      <div class="flex flex-col gap-1 font-light text-sm">
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+    <div class="md:grid md:grid-rows-2 md:grid-cols-2">
+      <div class="py-4 flex flex-col gap-4">
+        <p class="text-2xl font-medium text-amber-500">01.</p>
+        <p class="text-2xl">Front-end development</p>
+        <div class="flex flex-col gap-1 font-light text-sm">
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>HTML/CSS/JavaScript </p>
+            </div>
           </div>
-          <div>
-            <p>HTML/CSS/JavaScript </p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>ּResponsive design </p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>ּBootstrap & Tailwind CSS </p>
+            </div>
           </div>
-          <div>
-            <p>ּResponsive design </p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>ּW3C best practices </p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>ּBootstrap & Tailwind CSS </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>ּW3C best practices </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>ּAssets optimisation </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="py-4 flex flex-col gap-4">
-      <p class="text-2xl font-medium text-amber-500">02.</p>
-      <p class="text-2xl">Graphic design & web design</p>
-      <div class="flex flex-col gap-1 font-light text-sm">
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>UI/UX design</p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Adobe Creative Suite (Photoshop, Illustrator, Lightroom) </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Figma & Adobe XD </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Web-compatible graphic components preparation</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>ּAssets optimisation </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="py-4 flex flex-col gap-4">
-      <p class="text-2xl font-medium text-amber-500">03.</p>
-      <p class="text-2xl">Technical skills</p>
-      <div class="flex flex-col gap-1 font-light text-sm">
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+      <div class="py-4 flex flex-col gap-4">
+        <p class="text-2xl font-medium text-amber-500">02.</p>
+        <p class="text-2xl">Graphic design & web design</p>
+        <div class="flex flex-col gap-1 font-light text-sm">
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>UI/UX design</p>
+            </div>
           </div>
-          <div>
-            <p>Unix commands</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Adobe Creative Suite (Photoshop, Illustrator, Lightroom) </p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Figma & Adobe XD </p>
+            </div>
           </div>
-          <div>
-            <p> Git, Github</p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p> macOS, iOS environment </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Excel and Mac equivalent </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Google sheets </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Salesforce</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Web-compatible graphic components preparation</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="py-4 flex flex-col gap-4">
-      <p class="text-2xl font-medium text-amber-500">04.</p>
-      <p class="text-2xl">Other</p>
-      <div class="flex flex-col gap-1 font-light text-sm">
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+      <div class="py-4 flex flex-col gap-4">
+        <p class="text-2xl font-medium text-amber-500">03.</p>
+        <p class="text-2xl">Technical skills</p>
+        <div class="flex flex-col gap-1 font-light text-sm">
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Unix commands</p>
+            </div>
           </div>
-          <div>
-            <p>Traditional and digital illustration</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p> Git, Github</p>
+            </div>
+          </div>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p> macOS, iOS environment </p>
+            </div>
+          </div>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Excel and Mac equivalent </p>
+            </div>
+          </div>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Google sheets </p>
+            </div>
+          </div>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Salesforce</p>
+            </div>
           </div>
         </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+      </div>
+      <div class="py-4 flex flex-col gap-4">
+        <p class="text-2xl font-medium text-amber-500">04.</p>
+        <p class="text-2xl">Other</p>
+        <div class="flex flex-col gap-1 font-light text-sm">
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Traditional and digital illustration</p>
+            </div>
           </div>
-          <div>
-            <p>Photography & photo retouching</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Photography & photo retouching</p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Oil Painting </p>
+            </div>
           </div>
-          <div>
-            <p>Oil Painting </p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Teamwork </p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Client service & Client experience </p>
+            </div>
           </div>
-          <div>
-            <p>Teamwork </p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Translator, Social Media manager and digital marketing</p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Client service & Client experience </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Translator, Social Media manager and digital marketing</p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-start">
-          <div>
-            <p>⦿</p>
-          </div>
-          <div>
-            <p>Chat GPT & Adobe Firefly prompting</p>
+          <div class="flex gap-2 items-start">
+            <div>
+              <p>⦿</p>
+            </div>
+            <div>
+              <p>Chat GPT & Adobe Firefly prompting</p>
+            </div>
           </div>
         </div>
       </div>
@@ -279,79 +281,113 @@
   <section class="py-6 px-10">
     <h2 class="text-4xl font-semibold pb-4 capitalize">languages</h2>
     <div class="flex flex-col gap-2">
-      <p class="border-solid border-slate-950 border-b p-1">English (C1)</p>
-      <p class="border-solid border-slate-950 border-b p-1">French (C2)</p>
-      <p class="border-solid border-slate-950 border-b p-1">Polish (native)</p>
+      <p class="border-solid border-slate-950 border-b p-1 md:w-fit">English (C1)</p>
+      <p class="border-solid border-slate-950 border-b p-1 md:w-fit">French (C2)</p>
+      <p class="border-solid border-slate-950 border-b p-1 md:w-fit">Polish (native)</p>
     </div>
   </section>
-  <section class="py-6 px-10">
-    <h3 class="ephesis-regular text-4xl">Let’s work together!</h3>
-    <div class="flex flex-col gap-6">
-      <div class="flex gap-4 pt-4 pb-4">
+  <section class="py-6 px-10 md:py-12">
+    <h3 class="ephesis-regular text-4xl md:text-6xl md:py-8">Let’s work together!</h3>
+    <div class="flex flex-col gap-6 md:flex-row">
+      <div class="flex gap-4 pt-4 pb-4 md:basis-1/2">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
           </svg>
         </div>
         <div>
-          <p>adamusblanka@gmail.com</p>
+          <p class="md:text-lg">adamusblanka@gmail.com</p>
         </div>
       </div>
-      <div class="grid grid-cols-4 items-center gap-2 border-solid border-t border-b border-slate-950 pt-2 pb-2">
+      <div class="grid grid-cols-4 items-center gap-2 border-solid border-t border-b border-slate-950 pt-2 pb-2 md:basis-1/2">
         <div>
-          <img src="assets/mdi_github.svg" alt="">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C21.3736 4 18.7728 4.51732 16.3463 5.52241C13.9198 6.5275 11.715 8.00069 9.85786 9.85786C6.10714 13.6086 4 18.6957 4 24C4 32.84 9.74 40.34 17.68 43C18.68 43.16 19 42.54 19 42V38.62C13.46 39.82 12.28 35.94 12.28 35.94C11.36 33.62 10.06 33 10.06 33C8.24 31.76 10.2 31.8 10.2 31.8C12.2 31.94 13.26 33.86 13.26 33.86C15 36.9 17.94 36 19.08 35.52C19.26 34.22 19.78 33.34 20.34 32.84C15.9 32.34 11.24 30.62 11.24 23C11.24 20.78 12 19 13.3 17.58C13.1 17.08 12.4 15 13.5 12.3C13.5 12.3 15.18 11.76 19 14.34C20.58 13.9 22.3 13.68 24 13.68C25.7 13.68 27.42 13.9 29 14.34C32.82 11.76 34.5 12.3 34.5 12.3C35.6 15 34.9 17.08 34.7 17.58C36 19 36.76 20.78 36.76 23C36.76 30.64 32.08 32.32 27.62 32.82C28.34 33.44 29 34.66 29 36.52V42C29 42.54 29.32 43.18 30.34 43C38.28 40.32 44 32.84 44 24C44 21.3736 43.4827 18.7728 42.4776 16.3463C41.4725 13.9198 39.9993 11.715 38.1421 9.85786C36.285 8.00069 34.0802 6.5275 31.6537 5.52241C29.2272 4.51732 26.6264 4 24 4Z" fill="black"/>
+          </svg>
         </div>
         <div>
-          <img src="assets/Vector.svg" alt="">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 0C33.0609 0 34.0783 0.421427 34.8284 1.17157C35.5786 1.92172 36 2.93913 36 4V32C36 33.0609 35.5786 34.0783 34.8284 34.8284C34.0783 35.5786 33.0609 36 32 36H4C2.93913 36 1.92172 35.5786 1.17157 34.8284C0.421427 34.0783 0 33.0609 0 32V4C0 2.93913 0.421427 1.92172 1.17157 1.17157C1.92172 0.421427 2.93913 0 4 0H32ZM31 31V20.4C31 18.6708 30.3131 17.0124 29.0903 15.7897C27.8676 14.5669 26.2092 13.88 24.48 13.88C22.78 13.88 20.8 14.92 19.84 16.48V14.26H14.26V31H19.84V21.14C19.84 19.6 21.08 18.34 22.62 18.34C23.3626 18.34 24.0748 18.635 24.5999 19.1601C25.125 19.6852 25.42 20.3974 25.42 21.14V31H31ZM7.76 11.12C8.65113 11.12 9.50576 10.766 10.1359 10.1359C10.766 9.50576 11.12 8.65113 11.12 7.76C11.12 5.9 9.62 4.38 7.76 4.38C6.86357 4.38 6.00385 4.73611 5.36998 5.36998C4.73611 6.00385 4.38 6.86357 4.38 7.76C4.38 9.62 5.9 11.12 7.76 11.12ZM10.54 31V14.26H5V31H10.54Z" fill="black"/>
+          </svg>
         </div>
         <div>
-          <img src="assets/behance.svg" alt="">
+          <svg width="45" height="29" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.886 0.700012C14.164 0.700012 15.346 0.800012 16.426 1.09601C17.508 1.29401 18.394 1.69001 19.18 2.18401C19.968 2.67868 20.558 3.37135 20.95 4.26201C21.344 5.15201 21.542 6.24201 21.542 7.42801C21.542 8.81401 21.246 10 20.558 10.89C19.968 11.782 18.984 12.572 17.804 13.166C19.476 13.662 20.754 14.552 21.542 15.738C22.33 16.924 22.82 18.41 22.82 20.092C22.82 21.478 22.524 22.664 22.032 23.654C21.542 24.644 20.754 25.534 19.868 26.128C18.9052 26.764 17.8414 27.2319 16.722 27.512C15.542 27.81 14.362 28.008 13.182 28.008H0V0.700012H12.886ZM12.098 11.78C13.18 11.78 14.066 11.484 14.754 10.99C15.442 10.496 15.738 9.60401 15.738 8.51601C15.738 7.92201 15.638 7.32801 15.442 6.93401C15.246 6.54001 14.95 6.24001 14.558 5.94401C14.1572 5.7189 13.7261 5.55254 13.278 5.45001C12.786 5.35001 12.296 5.35001 11.704 5.35001H6V11.782L12.098 11.78ZM12.394 23.456C12.984 23.456 13.574 23.356 14.066 23.258C14.558 23.158 15.05 22.962 15.442 22.664C15.8412 22.3727 16.1762 22.0024 16.426 21.576C16.622 21.082 16.82 20.488 16.82 19.796C16.82 18.41 16.426 17.42 15.64 16.728C14.852 16.134 13.77 15.838 12.492 15.838H6V23.458L12.394 23.456ZM31.378 23.356C32.1647 24.148 33.3447 24.544 34.918 24.544C36 24.544 36.984 24.248 37.77 23.754C38.558 23.1593 39.05 22.5653 39.246 21.972H44.066C43.278 24.346 42.098 26.028 40.526 27.116C38.95 28.106 37.082 28.7 34.82 28.7C33.3729 28.7022 31.9383 28.4335 30.59 27.908C29.3763 27.4553 28.2944 26.7075 27.442 25.732C26.5266 24.8227 25.8511 23.7005 25.476 22.466C24.984 21.18 24.786 19.796 24.786 18.212C24.786 16.728 24.984 15.344 25.476 14.056C25.9479 12.8152 26.6488 11.6741 27.542 10.692C28.426 9.80201 29.508 9.01201 30.688 8.51601C32.0015 7.98862 33.4045 7.7197 34.82 7.72401C36.492 7.72401 37.968 8.02201 39.246 8.71401C40.526 9.40601 41.508 10.198 42.294 11.386C43.082 12.474 43.674 13.76 44.066 15.146C44.262 16.53 44.36 17.916 44.262 19.498H30C30 21.082 30.59 22.566 31.378 23.358M37.574 12.97C36.886 12.278 35.804 11.882 34.524 11.882C33.7735 11.8708 33.0313 12.0402 32.36 12.376C31.77 12.674 31.378 13.07 30.984 13.466C30.6197 13.8469 30.3797 14.3296 30.296 14.85C30.196 15.346 30.098 15.74 30.098 16.136H38.95C38.754 14.652 38.262 13.664 37.574 12.97ZM28.918 2.58001H39.934V5.25201H28.92L28.918 2.58001Z" fill="black"/>
+          </svg>
         </div>
         <div>
-          <img src="assets/dribble.svg" alt="">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M44 24C44.0033 26.6343 43.4845 29.2431 42.4738 31.6758C41.463 34.1085 39.9802 36.3167 38.111 38.173C36.257 40.0236 34.0565 41.4907 31.6353 42.4905C29.214 43.4903 26.6196 44.0032 24 44C12.954 44 4.00002 35.046 4.00002 24C3.99282 18.8717 5.96271 13.9381 9.50002 10.225C11.3663 8.25548 13.6148 6.68753 16.108 5.61715C18.6013 4.54678 21.2867 3.99651 24 4.00002C26.6196 3.99679 29.214 4.50974 31.6353 5.50956C34.0565 6.50938 36.257 7.97647 38.111 9.82702C39.9802 11.6833 41.463 13.8916 42.4738 16.3242C43.4845 18.7569 44.0033 21.3657 44 24Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M44.0003 24C41.0823 24 33.0323 22.9 25.8273 26.063C18.0003 29.5 12.3333 34.832 9.86328 38.147" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.5 5.45404C19.63 8.34304 26.46 15.698 29 23C31.54 30.302 32.48 39.28 33.06 41.835" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.1543 21.5C7.9323 21.728 17.9333 21.933 24.3333 19.2C30.7333 16.467 36.2403 11.44 38.1293 9.84503M5.5003 31.613C7.26289 35.8787 10.4412 39.407 14.5003 41.604" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.00002 24C3.99282 18.8717 5.96271 13.9381 9.50002 10.225C11.3663 8.25548 13.6148 6.68753 16.108 5.61715C18.6013 4.54678 21.2867 3.99651 24 4.00002M32 5.66402C34.2781 6.6598 36.3505 8.07159 38.111 9.82702C39.9802 11.6833 41.463 13.8916 42.4738 16.3242C43.4845 18.7569 44.0033 21.3657 44 24C44 26.462 43.555 28.821 42.74 31M24 44C26.6196 44.0032 29.214 43.4903 31.6353 42.4905C34.0565 41.4907 36.257 40.0236 38.111 38.173" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
       </div>
     </div>
   </section>
   <footer class="bg-footer py-6 px-10">
+    <div class="md:flex md:place-content-around">
+      <div>
+        <div>
+          <img class="size-12" src="assets/favicon-vert.png" alt="">
+        </div>
+        <div class="flex flex-col gap-1 pt-4 text-slate-50 font-light">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Work</a>
+        </div>
+        <div class="flex gap-4 py-6">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z" fill="white"/>
+            </svg>
+          </div>
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="white"/>
+            </svg>
+          </div>
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.443 5.34998C8.082 5.34998 8.673 5.39998 9.213 5.54798C9.754 5.64698 10.197 5.84498 10.59 6.09198C10.984 6.33931 11.279 6.68564 11.475 7.13098C11.672 7.57598 11.771 8.12098 11.771 8.71398C11.771 9.40698 11.623 9.99998 11.279 10.445C10.984 10.891 10.492 11.286 9.902 11.583C10.738 11.831 11.377 12.276 11.771 12.869C12.165 13.462 12.41 14.205 12.41 15.046C12.41 15.739 12.262 16.332 12.016 16.827C11.771 17.322 11.377 17.767 10.934 18.064C10.4526 18.382 9.9207 18.6159 9.361 18.756C8.771 18.905 8.181 19.004 7.591 19.004H1V5.34998H7.443ZM7.049 10.89C7.59 10.89 8.033 10.742 8.377 10.495C8.721 10.248 8.869 9.80198 8.869 9.25798C8.869 8.96098 8.819 8.66398 8.721 8.46698C8.623 8.26998 8.475 8.11998 8.279 7.97198C8.07859 7.85942 7.86306 7.77624 7.639 7.72498C7.393 7.67498 7.148 7.67498 6.852 7.67498H4V10.891L7.049 10.89ZM7.197 16.728C7.492 16.728 7.787 16.678 8.033 16.629C8.279 16.579 8.525 16.481 8.721 16.332C8.9206 16.1863 9.08808 16.0012 9.213 15.788C9.311 15.541 9.41 15.244 9.41 14.898C9.41 14.205 9.213 13.71 8.82 13.364C8.426 13.067 7.885 12.919 7.246 12.919H4V16.729L7.197 16.728ZM16.689 16.678C17.0823 17.074 17.6723 17.272 18.459 17.272C19 17.272 19.492 17.124 19.885 16.877C20.279 16.5796 20.525 16.2826 20.623 15.986H23.033C22.639 17.173 22.049 18.014 21.263 18.558C20.475 19.053 19.541 19.35 18.41 19.35C17.6865 19.351 16.9691 19.2167 16.295 18.954C15.6881 18.7276 15.1472 18.3537 14.721 17.866C14.2633 17.4113 13.9256 16.8502 13.738 16.233C13.492 15.59 13.393 14.898 13.393 14.106C13.393 13.364 13.492 12.672 13.738 12.028C13.974 11.4076 14.3244 10.837 14.771 10.346C15.213 9.90098 15.754 9.50598 16.344 9.25798C17.0008 8.99428 17.7023 8.85982 18.41 8.86198C19.246 8.86198 19.984 9.01098 20.623 9.35698C21.263 9.70298 21.754 10.099 22.147 10.693C22.541 11.237 22.837 11.88 23.033 12.573C23.131 13.265 23.18 13.958 23.131 14.749H16C16 15.541 16.295 16.283 16.689 16.679M19.787 11.485C19.443 11.139 18.902 10.941 18.262 10.941C17.8867 10.9353 17.5156 11.0201 17.18 11.188C16.885 11.337 16.689 11.535 16.492 11.733C16.3098 11.9234 16.1899 12.1648 16.148 12.425C16.098 12.673 16.049 12.87 16.049 13.068H20.475C20.377 12.326 20.131 11.832 19.787 11.485ZM15.459 6.28998H20.967V7.62598H15.46L15.459 6.28998Z" fill="white"/>
+              </svg>
+          </div>
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12C22.0016 13.3172 21.7423 14.6216 21.2369 15.8379C20.7315 17.0542 19.9901 18.1584 19.0555 19.0865C18.1285 20.0118 17.0282 20.7453 15.8176 21.2452C14.607 21.7451 13.3098 22.0016 12 22C6.47701 22 2.00001 17.523 2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001C13.3098 1.99839 14.607 2.25487 15.8176 2.75478C17.0282 3.25469 18.1285 3.98824 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22.0001 12C20.5411 12 16.5161 11.45 12.9136 13.0315C9.00014 14.75 6.16664 17.416 4.93164 19.0735" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.25 2.72699C9.815 4.17149 13.23 7.84899 14.5 11.5C15.77 15.151 16.24 19.64 16.53 20.9175" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.07617 10.75C3.96517 10.864 8.96567 10.9665 12.1657 9.59999C15.3657 8.23349 18.1192 5.71999 19.0637 4.92249M2.74917 15.8065C3.63047 17.9393 5.21963 19.7035 7.24917 20.802" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001M16 2.83201C17.139 3.3299 18.1752 4.03579 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12C22 13.231 21.7775 14.4105 21.37 15.5M12 22C13.3098 22.0016 14.607 21.7451 15.8176 21.2452C17.0282 20.7453 18.1285 20.0118 19.0555 19.0865" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-slate-50 text-2xl">Contact</p>
+          <div class="flex gap-4">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="stroke-slate-50 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-slate-50 font-light">adamusblanka@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <svg width="140" height="142" viewBox="0 0 140 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M129.136 104.365C126.991 108.913 124.514 112.849 121.577 116.616C117.957 121.252 113.701 125.112 109.03 128.52C104.499 131.828 99.683 134.723 94.3161 136.55C91.7931 137.403 89.3403 138.466 86.7945 139.23C83.1199 140.335 79.3337 140.867 75.5212 141.338C71.9703 141.775 68.4447 141.688 64.9199 141.55C58.839 141.311 52.8792 140.177 47.1033 138.295C41.8377 136.58 36.9318 133.986 32.2426 131.098C26.227 127.396 21.0016 122.719 16.4782 117.231C12.3353 112.204 9.07686 106.663 6.24953 100.831C6.07806 100.478 5.97674 100.087 5.87193 99.7063C4.85792 96.0116 3.15489 92.5288 2.49887 88.726C1.8981 85.242 1.08872 81.7686 0.836761 78.2556C0.372502 71.7656 0.782127 65.2815 2.25129 58.9122C2.84346 56.3449 3.5662 53.7974 4.40867 51.3011C5.60438 47.7589 6.89667 44.2409 9.05802 41.1897C9.22496 41.1407 9.31831 41.1003 9.41518 41.0876C9.50829 41.0752 9.62188 41.0596 9.6977 41.0998C48.9306 61.836 88.1614 82.5771 127.39 103.322C127.902 103.593 128.39 103.918 129.136 104.365Z" fill="#6699F2"/>
+          <path d="M129.962 98.4878C132.761 94.5838 135.951 85.3242 136.504 79.6181C133.785 83.8913 128.054 94.9973 127.449 97.1569L129.962 98.4878ZM125.265 96.0118C125.554 95.698 125.722 95.5782 125.809 95.4144C129.482 88.5136 133.196 81.6336 136.758 74.6762C137.398 73.4248 137.632 71.8552 137.663 70.4268C137.718 67.684 137.591 64.9288 137.355 62.1949C137.151 59.7958 136.691 57.4171 136.272 54.5521L116.712 91.4818L125.265 96.0118ZM114.322 90.1954C114.607 89.8341 114.825 89.6315 114.957 89.3824C121.465 77.1177 127.954 64.8433 134.48 52.5879C134.989 51.6395 135.103 50.7943 134.748 49.7736C134.041 47.718 133.508 45.5989 132.759 43.5549C132.201 42.024 131.425 40.5729 130.585 38.7348L105.737 85.6484L114.322 90.1954ZM103.41 84.4197L129.078 35.9585C128.118 34.4123 127.231 32.886 126.248 31.4259C125.221 29.8999 124.101 28.4372 122.863 26.7289L94.7394 79.827L103.41 84.4197ZM103.802 10.8147C101.029 15.0191 74.0164 66.3942 73.3906 68.6694C74.7425 69.3854 76.1067 70.1655 77.5209 70.8412C78.9928 71.545 80.3011 72.6503 81.9334 72.8899L111.901 16.3101C109.313 14.3642 106.919 12.261 103.802 10.8147ZM92.9943 78.5368L121.197 25.2888C119.116 22.2285 116.635 19.6885 113.472 17.5774C103.9 35.6491 94.339 53.6995 84.7817 71.7518C84.4574 72.3642 84.1677 72.9949 83.8743 73.623C83.8386 73.6981 83.874 73.8102 83.8897 73.9031C83.9051 74 83.9358 74.0944 83.974 74.2432C86.5709 75.6187 89.1854 77.0128 91.8137 78.3809C92.0528 78.5051 92.3786 78.4621 92.9943 78.5368ZM101.437 9.51502C90.4423 3.95141 79.0466 1.641 67.0945 2.4863C51.672 3.57668 38.2447 9.58975 26.624 19.8071C22.3142 23.5964 14.4955 33.8728 13.7579 36.9134L70.8961 67.1767L101.437 9.51502ZM10.8314 37.5254C12.4698 34.895 13.5568 32.3202 15.3136 29.9909C17.4381 27.1738 19.5432 24.3601 21.8945 21.729C25.2569 17.9653 29.1504 14.8019 33.3509 12.0771C36.5561 9.99873 39.9589 8.19354 43.3935 6.51383C47.3507 4.5788 51.5159 3.23386 55.8348 2.20758C59.6938 1.29069 63.5571 0.657395 67.4737 0.528709C71.3859 0.400617 75.3174 0.576378 79.2263 0.824511C82.4395 1.02852 85.6416 1.45918 88.7114 2.5614C90.8177 3.31768 92.93 4.08372 95.0891 4.66202C98.9534 5.69692 102.301 7.80152 105.736 9.69248C112.296 13.3026 117.957 17.9988 122.882 23.7061C126.765 28.2064 129.953 33.0917 132.572 38.3746C135.201 43.6825 137.049 49.263 138.236 55.1069C139.339 60.5472 139.827 66.0097 139.568 71.5259C139.253 78.2055 138.252 84.7792 135.667 91.0288C135.107 92.3843 134.732 93.8219 134.108 95.1441C133.177 97.1008 132.096 98.9865 131.18 100.717C130.818 100.836 130.725 100.88 130.63 100.893C130.537 100.904 130.428 100.911 130.35 100.87C91.1402 80.1385 51.9341 59.4048 12.7305 38.6664C12.214 38.3934 11.7262 38.0651 10.8314 37.5254Z" fill="#6699F2"/>
+        </svg>
+      </div>
+    </div>
+    <div class="border-t border-solid border-slate-50 mt-10"></div>
     <div>
-      <img class="size-12" src="assets/favicon-vert.png" alt="">
-    </div>
-    <div class="flex flex-col gap-1 pt-4 text-slate-50 font-light">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Work</a>
-    </div>
-    <div class="flex gap-4 py-6">
-      <div>
-        <img src="assets/mdi_github-white.svg" alt="">
-      </div>
-      <div>
-        <img src="assets/mdi_linkedin-white.svg" alt="">
-      </div>
-      <div>
-        <img src="assets/ri_behance-white.svg" alt="">
-      </div>
-      <div>
-        <img src="assets/dribble-white.svg" alt="">
-      </div>
-    </div>
-    <div class="flex flex-col gap-2">
-      <p class="text-slate-50 text-2xl">Contact</p>
-      <div class="flex gap-4">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="stroke-slate-50 size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-slate-50 font-light">adamusblanka@gmail.com</p>
-        </div>
-      </div>
-      <div class="border-t border-solid border-slate-50 mt-10"></div>
-      <div>
-        <p class="text-slate-50 text-xs">© Blanka Adamus - Portfolio</p>
-      </div>
+      <p class="text-slate-50 text-xs">© Blanka Adamus - Portfolio</p>
     </div>
   </footer>
 </body>
