@@ -1973,6 +1973,26 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .sm\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .sm\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .sm\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .sm\:row-end-3 {
+    grid-row-end: 3;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2004,6 +2024,14 @@ body {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:grid-rows-2 {
@@ -2038,6 +2066,18 @@ body {
     justify-content: center;
   }
 
+  .sm\:justify-items-start {
+    justify-items: start;
+  }
+
+  .sm\:justify-items-end {
+    justify-items: end;
+  }
+
+  .sm\:justify-items-center {
+    justify-items: center;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }
@@ -2052,6 +2092,10 @@ body {
 
   .sm\:self-center {
     align-self: center;
+  }
+
+  .sm\:justify-self-center {
+    justify-self: center;
   }
 
   .sm\:px-24 {
@@ -2110,6 +2154,18 @@ body {
     padding-left: 2.5rem;
   }
 
+  .sm\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .sm\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .sm\:pl-16 {
+    padding-left: 4rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -2148,6 +2204,26 @@ body {
 
   .md\:top-36 {
     top: 9rem;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:row-end-3 {
+    grid-row-end: 3;
   }
 
   .md\:mt-0 {
@@ -2254,6 +2330,10 @@ body {
     position: absolute;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2285,6 +2365,10 @@ body {
     flex-basis: 66.666667%;
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:gap-4 {
     gap: 1rem;
   }
@@ -2309,12 +2393,52 @@ body {
     padding-bottom: 1rem;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
 
   .lg\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .lg\:pl-6 {
+    padding-left: 1.5rem;
+  }
+
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .lg\:pl-16 {
+    padding-left: 4rem;
   }
 
   .lg\:text-6xl {
