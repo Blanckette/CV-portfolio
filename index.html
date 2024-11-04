@@ -10,28 +10,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
 </head>
 <body class="epilogue-main">
-  <header class="flex justify-around items-center h-14 py-10 border-solid border-slate-950 border-b">
+  <header class="hidden sm:flex justify-around items-center h-14 py-10 border-solid border-slate-950 border-b">
     <a href="index.html" class="flex items-center">
       <img class="size-8 m-2" src="assets/favicon-vert.png" alt="">
       <h1 class="">
       Blanka Adamus
       </h1>
     </a>
-    <nav>
       <div class="hidden sm:flex gap-4">
         <a class="links-black" href=""><span class="undeline-links-black">About</span></a>
         <a class="links-black" href=""><span class="undeline-links-black">Work</span></a>
         <a class="links-black" href=""><span class="undeline-links-black">Contact</span></a>
       </div>
-      <div class="sm:hidden">
+  </header>
+  <nav id="burger" class="border-solid border-slate-950 border-b sm:hidden">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/favicon-vert.png" class="h-8" alt="a/b Logo">
+          <span class="self-center whitespace-nowrap">Blanka Adamus</span>
+      </a>
+      <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-slate-950 rounded-sm focus:outline-none focus:ring-1 focus:ring-amber-800" aria-controls="navbar-hamburger" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
         </svg>
+      </button>
+      <div class="hidden w-full" id="navbar-hamburger">
+        <ul class="flex flex-col font-medium mt-4 rounded-sm">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-cyan-50 font-light bg-cyan-950 rounded-sm" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">About / CV</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">Work</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <section class="flex flex-col mt-8 sm:flex-row sm:px-24 lg:px-44 lg:py-10">
     <div class="flex flex-col align-middle items-center py-4 h-80 relative">
       <div class="size-52 relative">
@@ -471,7 +495,7 @@
     </div>
     <div class="relative">
       <div class="flex flex-col px-10 py-6 bg-cyan-900 border-solid border-amber-600 border-y pt-12 z-10 relative -top-20 h-fit">
-        <div class="py-6">
+        <div class="py-6 mt-8">
           <p class="ephesis-regular text-4xl font-extralight text-amber-600 py-3 lg:text-6xl lg:py-4">Hi !</p>
           <p class="font-extralight text-cyan-50 lg:text-sm">I'm an aspiring <span class="font-semibold">front-end developer</span> 👩🏼‍💻, <span class="font-semibold">artist</span> 👩🏼‍🎨, and dedicated cat lover. When I'm not in front of my computer, you’ll likely find me painting or exploring hidden gems on my travels 🧳. <br>
           Take a look below to learn more about my background and skills—<br> I’d love the chance to collaborate with you!</p>
@@ -952,5 +976,6 @@
       <p class="text-slate-50 text-xs mt-4">© Blanka Adamus - Portfolio</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
