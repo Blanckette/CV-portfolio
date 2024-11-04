@@ -2537,6 +2537,34 @@ body {
     gap: 0.5rem;
   }
 
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
+  .lg\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .lg\:gap-64 {
+    gap: 16rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:self-end {
     align-self: flex-end;
   }
@@ -2636,6 +2664,10 @@ body {
     padding-bottom: 5rem;
   }
 
+  .lg\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .lg\:align-baseline {
     vertical-align: baseline;
   }
@@ -2663,6 +2695,16 @@ body {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
   }
 
   .lg\:leading-8 {
