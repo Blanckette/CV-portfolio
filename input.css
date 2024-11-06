@@ -108,11 +108,8 @@ body {
 
 .showhim:hover > .showme {
   display: block;
+  opacity: 1;
 }
-
-/* <div class="showhim">HOVER ME
-  <div class="showme">hai</div>
-</div> */
 
 /* burger menu */
 .menu {

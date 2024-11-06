@@ -18,9 +18,16 @@ module.exports = {
       },
     },
     extend: {
-    },
   },
-  plugins: [],
+}
+}
+
+// tailwind.config.js
+module.exports = {
+  // ...
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
 module.exports = {
