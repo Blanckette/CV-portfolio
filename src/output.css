@@ -901,6 +901,10 @@ input[type="range"]::-ms-fill-lower {
   border-width: 0;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -927,6 +931,70 @@ input[type="range"]::-ms-fill-lower {
 
 .top-4 {
   top: 1rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-28 {
+  right: 7rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-28 {
+  left: 7rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
+.right-40 {
+  right: 10rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.left-12 {
+  left: 3rem;
+}
+
+.right-12 {
+  right: 3rem;
 }
 
 .z-40 {
@@ -968,6 +1036,14 @@ input[type="range"]::-ms-fill-lower {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
 }
 
 .block {
@@ -1049,6 +1125,10 @@ input[type="range"]::-ms-fill-lower {
   height: 2rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1082,8 +1162,12 @@ input[type="range"]::-ms-fill-lower {
   max-width: 1280px;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.basis-2\/3 {
+  flex-basis: 66.666667%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
 }
 
 .grid-cols-4 {
@@ -1102,6 +1186,10 @@ input[type="range"]::-ms-fill-lower {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1114,8 +1202,16 @@ input[type="range"]::-ms-fill-lower {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -1128,6 +1224,10 @@ input[type="range"]::-ms-fill-lower {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-1 {
@@ -1148,6 +1248,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1270,10 +1374,6 @@ input[type="range"]::-ms-fill-lower {
 
 .fill-amber-600 {
   fill: #d97706;
-}
-
-.fill-amber-700 {
-  fill: #b45309;
 }
 
 .fill-cyan-700 {
@@ -1407,6 +1507,16 @@ input[type="range"]::-ms-fill-lower {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-light {
@@ -1598,6 +1708,20 @@ body {
   }
 }
 
+/* show elements on hover */
+
+.showme {
+  display: none;
+}
+
+.showhim:hover > .showme {
+  display: block;
+}
+
+/* <div class="showhim">HOVER ME
+  <div class="showme">hai</div>
+</div> */
+
 /* burger menu */
 
 .menu {
@@ -1678,11 +1802,6 @@ body {
 .hover\:text-amber-950:hover {
   --tw-text-opacity: 1;
   color: rgb(69 26 3 / var(--tw-text-opacity));
-}
-
-.hover\:text-amber-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(146 64 14 / var(--tw-text-opacity));
 }
 
 .hover\:text-sky-900:hover {
@@ -1894,23 +2013,9 @@ body {
     height: 9rem;
   }
 
-  .lg\:size-full {
-    width: 100%;
-    height: 100%;
-  }
-
-  .lg\:size-96 {
-    width: 24rem;
-    height: 24rem;
-  }
-
   .lg\:size-auto {
     width: auto;
     height: auto;
-  }
-
-  .lg\:w-full {
-    width: 100%;
   }
 
   .lg\:w-auto {
@@ -1929,10 +2034,6 @@ body {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-2 {
@@ -1971,6 +2072,10 @@ body {
     justify-items: end;
   }
 
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
   .lg\:gap-14 {
     gap: 3.5rem;
   }
@@ -1979,13 +2084,9 @@ body {
     gap: 1.5rem;
   }
 
-  .lg\:gap-12 {
-    gap: 3rem;
-  }
-
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:px-24 {
@@ -2001,16 +2102,6 @@ body {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:pl-4 {

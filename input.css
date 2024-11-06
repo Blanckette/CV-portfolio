@@ -101,6 +101,19 @@ body {
     }
 } 
 
+/* show elements on hover */
+.showme {
+  display: none;
+}
+
+.showhim:hover > .showme {
+  display: block;
+}
+
+/* <div class="showhim">HOVER ME
+  <div class="showme">hai</div>
+</div> */
+
 /* burger menu */
 .menu {
     position: fixed;
