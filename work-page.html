@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="favicon icon" type="image/png" href="assets/favicon-vert.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="epilogue-main">
+    <header class="hidden sm:flex justify-around items-center h-14 py-10 border-solid border-slate-950 border-b">
+      <a href="index.html" class="flex items-center">
+        <img class="size-8 m-2" src="assets/favicon-vert.png" alt="">
+        <h1 class="">
+        Blanka Adamus
+        </h1>
+      </a>
+        <div class="hidden sm:flex gap-4">
+          <a class="links-black" href="about.html"><span class="undeline-links-black">About</span></a>
+          <a class="links-black" href=""><span class="undeline-links-black">Work</span></a>
+          <a class="links-black" href=""><span class="undeline-links-black">Contact</span></a>
+        </div>
+    </header>
+    <nav id="burger" class="border-solid border-slate-950 border-b sm:hidden">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/favicon-vert.png" class="h-8" alt="a/b Logo">
+            <span class="self-center whitespace-nowrap">Blanka Adamus</span>
+        </a>
+        <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-slate-950 rounded-sm focus:outline-none focus:ring-1 focus:ring-amber-800" aria-controls="navbar-hamburger" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+        </button>
+        <div class="hidden w-full" id="navbar-hamburger">
+          <ul class="flex flex-col font-medium mt-4 rounded-sm">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-cyan-50 font-light bg-cyan-950 rounded-sm" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">About / CV</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">Work</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-slate-950 font-normal rounded-sm hover:bg-amber-50 hover:text-amber-950">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="px-4 py-4">
+        <div class="flex flex-col justify-center items-center py-4">
+            <h2 class="text-3xl font-semibold text-cyan-950 lg:text-6xl lg:py-8 animate__animated animate__bounceIn">Work</h2>
+            <div class="w-32 lg:w-64">
+                <svg class="fill-amber-600 w-full" width="224" height="40" viewBox="0 0 224 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M223.49 29.1842C224.245 30.3868 224.272 30.9146 222.814 31.373C215.606 33.64 208.261 35.8077 201.369 38.3291C197.088 39.8954 193.972 39.691 189.829 38.1849C182.932 35.6783 175.534 33.5674 167.877 31.1406C158.798 34.0269 149.487 36.9875 140.011 40C134.964 38.4241 130.135 36.9464 125.364 35.4168C121.54 34.1914 117.764 32.9217 114.014 31.6317C112.663 31.167 111.519 31.1666 110.153 31.6229C103.536 33.8329 96.8941 36.0209 90.2258 38.1853C88.4352 38.7663 86.5201 39.2362 84.4174 39.8259C74.5296 37.5421 66.0474 33.777 56.1283 31.1686C51.3638 32.6934 46.6032 34.219 41.8379 35.7414C38.0094 36.9644 34.1524 38.1634 30.3544 39.4135C28.8348 39.9134 27.4752 39.8243 26.0516 39.358C18.3275 36.8266 10.5907 34.3056 2.87701 31.7647C1.84055 31.4233 0.911349 30.9873 0 30.6224C0.625435 29.4697 1.60452 29.308 3.1964 29.831C7.94301 31.3914 12.7261 32.9202 17.4891 34.4673C21.1717 35.6635 24.8447 36.8689 28.5623 38.0835C35.8776 35.6544 42.8125 33.1466 50.1078 30.9893C56.8305 29.0013 55.5112 28.6703 62.4595 30.9937C69.5492 33.3646 76.7656 35.6276 84.2842 38.0532C93.4081 35.0858 102.663 32.0761 112.076 29.0145C121.287 31.9907 130.563 34.9884 140.004 38.0392C149.318 35.0339 158.616 32.0338 167.973 29.0145C177.169 32.0122 186.206 34.9576 195.519 37.9933C204.941 35.4128 213.624 31.9028 223.49 29.1842Z"/>
+                    <path d="M195.735 25.4443C193.505 24.7687 191.067 24.0703 188.704 23.3053C182.627 21.3369 176.589 19.3346 170.525 17.3542C168.743 16.7721 167.211 16.6787 165.16 17.3818C158.004 19.8341 150.65 22.1191 143.354 24.4525C142.282 24.795 141.117 25.0541 139.833 25.3947C135.648 24.1043 131.404 22.8278 127.22 21.4971C122.789 20.088 118.386 18.6531 114.033 17.177C112.481 16.6507 111.33 16.8021 109.833 17.2908C101.864 19.8912 93.8162 22.423 85.7912 24.9735C85.3192 25.1232 84.8002 25.2306 84.1063 25.4083C79.3306 23.9258 74.5027 22.4449 69.7085 20.9329C66.1107 19.7978 62.5145 18.6579 58.9986 17.4525C56.9913 16.7641 55.2662 16.7749 53.2239 17.4605C45.7916 19.9567 38.2826 22.3871 30.7819 24.8242C29.9688 25.0885 29.0225 25.235 28.1052 25.4439C19.5338 22.6933 11.0539 19.9798 2.59714 17.2456C1.77661 16.9802 0.921864 16.6459 0.425246 16.2271C0.0924101 15.9456 0.361896 15.4585 0.361896 14.6943C10.6578 17.2532 19.0178 20.9289 28.6607 23.5417C37.9126 20.5272 47.1653 17.5124 56.4388 14.4907C65.7697 17.5339 74.9146 20.5168 84.3646 23.5988C93.5057 20.5911 102.733 17.5547 112.128 14.4631C121.345 17.484 130.479 20.4777 139.999 23.5984C149.069 20.6298 158.309 17.6058 167.891 14.4695C176.917 17.4353 186.044 20.4338 195.515 23.5457C204.85 20.9237 213.69 17.5663 223.241 14.7294C224.007 16.2343 223.829 16.5154 221.929 17.163C219.698 17.924 217.476 18.6942 215.194 19.4089C208.828 21.4024 202.433 23.3692 195.735 25.4443Z"/>
+                    <path d="M84.2789 9.07021C93.5503 6.04733 102.704 3.06319 112.096 0.00122152C121.369 3.03166 130.619 6.05454 139.988 9.11693C149.175 6.10684 158.313 3.11191 167.81 0C176.997 2.98053 186.277 5.99103 195.701 9.04864C200.423 7.54699 205.033 6.02895 209.736 4.59998C214.268 3.22252 218.279 1.31719 223.418 0.401681C224.779 1.75601 223.141 2.26904 221.813 2.72943C219.36 3.57987 216.784 4.32889 214.264 5.12343C208.858 6.82832 203.459 8.53959 198.046 10.2373C197.214 10.4984 196.321 10.7044 195.53 10.916C187.002 8.18501 178.637 5.50432 170.268 2.82802C168.585 2.2898 167.151 2.26187 165.264 2.88632C156.967 5.63209 148.515 8.2433 139.93 10.9627C131.726 8.31519 123.495 5.67082 115.292 3.00251C113.198 2.32136 111.544 2.25149 109.202 3.05003C101.566 5.65527 93.6664 8.03929 85.8619 10.5028C85.3876 10.6525 84.8613 10.7547 84.2448 10.9073C80.0469 9.62121 75.7931 8.35231 71.6042 7.02476C67.1696 5.61891 62.7513 4.19513 58.4202 2.70028C56.6459 2.08778 55.2015 2.41877 53.7414 2.87316C51.2128 3.66051 48.769 4.52531 46.2546 5.32667C40.5036 7.15969 34.7318 8.97317 28.6844 10.8845C27.5646 10.5958 26.1417 10.2956 24.8425 9.88351C17.5264 7.56135 10.2266 5.22444 2.95819 2.85956C1.91878 2.52141 1.00962 2.03948 0.195064 1.54997C-0.0156404 1.42301 0.246436 0.980215 0.504815 0.751849C0.658189 0.615674 1.30378 0.509882 1.5964 0.571366C2.89118 0.842865 4.21276 1.11517 5.39067 1.50367C11.6815 3.57707 17.9262 5.69119 24.2007 7.77817C25.5037 8.21138 26.8685 8.59067 28.3881 9.05064C32.5532 7.7159 36.7443 6.38552 40.9116 5.034C45.2018 3.64294 49.5129 2.26826 53.7272 0.813309C55.7643 0.1102 57.3643 0.2252 59.3851 0.915536C67.136 3.56427 75.0106 6.10923 82.8449 8.68771C83.3087 8.84023 83.8218 8.94924 84.2789 9.07021Z"/>
+                </svg>
+            </div>
+        </div>
+        <!-- version 1 -->
+        <div class="flex flex-col justify-center items-center gap-8 py-4 md:grid md:grid-cols-2 md:items-start md:justify-items-center lg:items-stretch lg:gap-12 lg:px-10 lg:hidden">
+            <!-- coffe shop -->
+            <div class="w-72 lg:w-auto">
+                <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out lg:size-auto">
+                    <a href="">
+                        <img class="object-cover size-72 lg:size-auto rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/coffee-second.png" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                    <a href="">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Coffe shop website</h3>
+                            <p class="text-xs leading-6">I created this <span class="font-semibold text-amber-700">single-page website</span> that mimics the layout and design of a cosy and inviting coffee shop,<span class="font-semibold yexy text-amber-700">based on a mockup</span>.</p>
+                        </div>
+                    </a>
+                    <div class="flex justify-center gap-2 py-2">
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">html / css</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">web design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kitchen app -->
+            <div class="w-72 lg:w-auto">
+                <div class="size-72 lg:size-auto border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                    <a href="">
+                        <img class="object-cover size-72 lg:size-auto rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/kitchen-app-second.png" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                    <a href="">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Cooking and recipes app</h3>
+                            <p class="text-xs leading-6">I used the highly praised <span class="font-semibold text-amber-700">Tailwind CSS</span> framework to build a comprehensive <span class="font-semibold text-amber-700">multi-page kitchen application</span>.</p>
+                        </div>
+                    </a>
+                    <div class="flex justify-center gap-2 py-2">
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">TailwindCSS</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">prototyping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dribble look alike -->
+            <div class="w-72 lg:w-auto">
+                <div class="size-72 lg:size-auto border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                    <a href="">
+                        <img class="object-cover size-72 lg:size-auto rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/dribble-img-main.png" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                    <a href="">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Dribble look-alike</h3>
+                            <p class="text-xs leading-6">I employed a widely recognized <span class="font-semibold text-amber-700">portfolio website</span> as a platform to advance my expertise in <span class="font-semibold text-amber-700">web development</span>.</p>
+                        </div>
+                    </a>
+                    <div class="flex justify-center gap-2 py-2">
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">html / CSS</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">prototyping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- freelance website -->
+            <div class="w-72 lg:size-auto">
+                <div class="size-72 lg:size-auto border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                    <a href="">
+                        <img class="object-cover size-72 lg:size-auto rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/freelance-main.png" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                    <a href="">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Freelance website</h3>
+                            <p class="text-xs leading-6">Through this hands-on approach, I was able to delve deeply into the intricacies of <span class="font-semibold text-amber-700">responsive design</span> .</p>
+                        </div>
+                    </a>
+                    <div class="flex justify-center gap-2 py-2">
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">responsive</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">web design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- shopify shop -->
+            <div class="w-72 lg:size-auto">
+                <div class="size-72 lg:size-auto border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                    <a href="">
+                        <img class="object-cover size-72 lg:size-auto rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/shopify-shop-main.png" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                    <a href="">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Shopify online art gallery</h3>
+                            <p class="text-xs leading-6">Through this hands-on approach, I was able to delve deeply into the intricacies of <span class="font-semibold text-amber-700">responsive design</span> .</p>
+                        </div>
+                    </a>
+                    <div class="flex justify-center gap-2 py-2">
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">template</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">web design</p>
+                        </div>
+                        <div class="py-2 px-4 rounded-full border-sky-900 border">
+                            <p class="text-sm text-sky-900 font-medium">SEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- version 2 -->
+         <section class="hidden lg:flex flex-col gap-12 py-10 px-10 items-end self-center mt-10 mb-28 relative xl:w-10/12 xl:place-self-center 2xl:w-1/2">
+            <!-- cofee shop -->
+            <div class="showhim flex flex-row-reverse gap-4 items-start">
+                <a href="">
+                    <h3 class="text-5xl text-sky-900 font-semibold hover:scale-105 transition-all duration-500 ease-in-out hover:text-amber-700">Coffe shop website</h3>
+                </a>
+                <div class="showme">
+                    <div class="w-72 absolute top-0 left-12 animate__animated animate__fadeInRight">
+                        <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                            <a href="">
+                                <img class="object-cover size-72 rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/coffee-second.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                            <a href="">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Coffe shop website</h3>
+                                    <p class="text-xs leading-6">I created this <span class="font-semibold text-amber-700">single-page website</span> that mimics the layout and design of a cosy and inviting coffee shop,<span class="font-semibold yexy text-amber-700">based on a mockup</span>.</p>
+                                </div>
+                            </a>
+                            <div class="flex justify-center gap-2 py-2">
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">html / css</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">web design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cooking app -->
+            <div class="showhim flex flex-row-reverse">
+                <a href="">
+                    <h3 class="text-5xl text-sky-900 font-semibold hover:scale-105 transition-all duration-500 ease-in-out hover:text-amber-700">Cooking and recipes app</h3>
+                </a>
+                <div class="showme">
+                    <div class="w-72 absolute top-0 left-12 animate__animated animate__fadeInRight">
+                        <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                            <a href="">
+                                <img class="object-cover size-72 rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/kitchen-app-second.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                            <a href="">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Cooking and recipes app</h3>
+                                    <p class="text-xs leading-6">I used the highly praised <span class="font-semibold text-amber-700">Tailwind CSS</span> framework to build a comprehensive <span class="font-semibold text-amber-700">multi-page kitchen application</span>.</p>
+                                </div>
+                            </a>
+                            <div class="flex justify-center gap-2 py-2">
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">TailwindCSS</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">prototyping</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dribble look-alike -->
+            <div class="showhim flex flex-row-reverse">
+                <a href="">
+                    <h3 class="text-5xl text-sky-900 font-semibold hover:scale-105 transition-all duration-500 ease-in-out hover:text-amber-700">Dribble look-alike</h3>
+                </a>
+                <div class="showme">
+                    <div class="w-72 absolute top-0 left-12 animate__animated animate__fadeInRight">
+                        <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                            <a href="">
+                                <img class="object-cover size-72 rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/dribble-img-main.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                            <a href="">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Dribble look-alike</h3>
+                                    <p class="text-xs leading-6">I employed a widely recognized <span class="font-semibold text-amber-700">portfolio website</span> as a platform to advance my expertise in <span class="font-semibold text-amber-700">web development</span>.</p>
+                                </div>
+                            </a>
+                            <div class="flex justify-center gap-2 py-2">
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">html / CSS</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">prototyping</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- freelance website -->
+            <div class="showhim flex flex-row-reverse">
+                <a href="">
+                    <h3 class="text-5xl text-sky-900 font-semibold hover:scale-105 transition-all duration-500 ease-in-out hover:text-amber-700">Freelance website</h3>
+                </a>
+                <div class="showme">
+                    <div class="w-72 absolute top-0 left-12 animate__animated animate__fadeInRight">
+                        <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                            <a href="">
+                                <img class="object-cover size-72 rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/freelance-main.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                            <a href="">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Freelance website</h3>
+                                    <p class="text-xs leading-6">Through this hands-on approach, I was able to delve deeply into the intricacies of <span class="font-semibold text-amber-700">responsive design</span> .</p>
+                                </div>
+                            </a>
+                            <div class="flex justify-center gap-2 py-2">
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">responsive</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">web design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- shopify shop -->
+            <div class="showhim flex flex-row-reverse">
+                <a href="">
+                    <h3 class="text-5xl text-sky-900 font-semibold hover:scale-105 transition-all duration-500 ease-in-out hover:text-amber-700">Shopify online art gallery</h3>
+                </a>
+                <div class="showme">
+                    <div class="w-72 absolute top-0 left-12 animate__animated animate__fadeInRight">
+                        <div class="size-72 border border-solid border-amber-700 rounded overflow-hidden hover:border-2 transition-all duration-700 ease-in-out">
+                            <a href="">
+                                <img class="object-cover size-72 rounded hover:scale-110 transition-all duration-700 ease-in-out" src="assets/shopify-shop-main.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2 py-4 mt-2">
+                            <a href="">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-2xl font-medium w-fit hover:text-sky-900 transition-all duration-600 ease-in-out">Shopify online art gallery</h3>
+                                    <p class="text-xs leading-6">Through this hands-on approach, I was able to delve deeply into the intricacies of <span class="font-semibold text-amber-700">responsive design</span> .</p>
+                                </div>
+                            </a>
+                            <div class="flex justify-center gap-2 py-2">
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">template</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">web design</p>
+                                </div>
+                                <div class="py-2 px-4 rounded-full border-sky-900 border">
+                                    <p class="text-sm text-sky-900 font-medium">SEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </section>
+    <section class="flex flex-col py-2 px-6 justify-center items-center lg:flex-row lg:gap-6 lg:py-6 lg:w-8/12 xl:gap-10 lg:items-center lg:place-self-center 2xl:w-1/3">
+        <h3 class="ephesis-regular text-6xl text-cyan-950 lg:text-8xl lg:basis-1/2">Let’s work together !</h3>
+        <div class="flex gap-4 pt-4 pb-4 items-center lg:flex-col-reverse lg:gap-6 lg:items-end">
+            <div class="flex gap-4 pt-4 pb-4 items-center lg:scale-125">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-amber-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                </div>
+                <div class="links-black">
+                    <a class="undeline-links-black" href="mailto:adamusblanka@gmail.com">adamusblanka@gmail.com</a>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <svg width="236" height="172" viewBox="0 0 236 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-cyan-800" fill-rule="evenodd" clip-rule="evenodd" d="M234.94 64.8424C232.027 86.5607 228.739 98.0328 209.547 120.777C190.356 143.521 102.535 158.483 70.068 158.483C37.6008 158.483 -2.4115 133.448 0.113782 104.44C2.63906 75.432 15.8139 51.7229 47.3482 48.8042C79.5748 45.8214 107.883 59.6338 139.522 52.2262C166.875 45.8214 175.245 21.4097 194.032 13.7081C232.027 -1.8683 236.921 50.0673 234.94 64.8424Z"/>
+                    <path d="M215.392 75.4501C214.319 77.2698 200.73 86.4762 192.487 87.8388C190.892 88.1024 189.15 88.1931 187.765 87.3601C186.946 86.8679 186.336 86.1007 185.757 85.3415C184.432 83.6061 183.169 81.8238 181.969 79.9993C181.338 79.0406 180.713 78.0401 180.499 76.9128C179.932 73.9277 182.338 71.2467 184.716 69.3555C190.182 65.0078 196.583 61.8403 203.354 60.1319C204.553 59.8295 205.824 59.5733 207.012 59.9168C208.94 60.4744 210.092 62.4249 210.827 64.2918C211.563 66.1587 212.137 68.2009 213.606 69.5665C213.942 69.8783 216.465 73.6307 215.392 75.4501Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M142.375 154.767C129.186 157.023 135.472 147.437 137.291 135.44C140.279 115.726 143.965 85.7679 143.965 85.7679C143.965 85.7679 146.368 131.417 146.368 142.532C146.368 153.648 143.964 154.495 142.375 154.767Z" fill="white"/>
+                    <path d="M128.284 143.906C128.621 147.081 128.976 150.323 130.325 153.216C129.589 146.664 128.853 140.113 128.117 133.561C128.026 132.752 128.053 131.722 128.797 131.392C129.427 138.79 130.366 146.162 131.611 153.481C131.758 154.35 130.453 154.847 129.72 154.358C128.987 153.868 128.753 152.915 128.586 152.049C127.371 145.742 126.703 139.33 126.592 132.907C125.045 133.212 123.961 134.711 123.648 136.256C123.335 137.801 123.637 139.396 123.938 140.944C124.908 145.924 125.878 150.904 126.848 155.884C127.301 158.213 127.755 160.62 127.254 162.94C125.33 154.151 123.782 145.28 122.618 136.359C107.847 145.391 88.816 147.07 72.6924 140.765C69.171 139.388 65.6738 137.563 63.3478 134.581C61.5156 132.233 60.538 129.317 60.0256 126.383C58.2066 115.962 61.9343 105.333 66.994 96.0425C68.9138 92.5173 71.1003 88.8459 70.9452 84.835C70.892 83.4542 70.5943 81.9254 71.4006 80.8028C71.5149 81.0108 66.1215 42.4321 68.2851 33.8985C73.4938 13.3548 90.4136 10.5727 101.247 10.8262C108.516 10.9961 154.59 20.1526 161.246 32.604C169.996 48.9693 168.138 62.7284 166.584 71.8007C166.122 74.5022 143.972 85.5692 143.966 85.6251C142.699 97.397 134.202 123.048 127.075 132.502C127.478 136.304 127.881 140.105 128.284 143.906Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9333 96.0068C17.7794 94.3486 12.8292 94.8404 9.08424 97.2835C8.72168 97.5198 8.20044 97.2562 8.02093 96.8628C7.84145 96.4694 7.9086 96.0116 8.0004 95.5892C9.19649 90.0849 13.9613 85.8734 19.2602 83.9377C24.5591 82.0023 30.3551 81.9969 35.9878 82.3276C36.5468 82.3607 37.131 82.4042 37.608 82.6971C38.0846 82.9904 38.4052 83.6167 38.1676 84.1227C35.9521 88.8413 34.2827 93.815 33.2043 98.9137C33.0294 99.7403 32.1728 100.289 31.329 100.358C30.4852 100.427 29.6586 100.116 28.8927 99.7551C26.5066 98.6319 24.3829 96.9848 21.9333 96.0068Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M149.612 12.9149C149.818 9.75755 149.58 6.5712 148.907 3.47958L148.893 3.4135C148.779 2.89065 148.661 2.35296 148.766 1.82977C148.999 0.672809 150.284 -0.0236575 151.464 0.000614287C152.645 0.0248861 153.737 0.588194 154.782 1.13836C159.79 3.77657 164.888 6.48119 168.831 10.5423C168.955 13.8302 168.18 17.0745 167.415 20.2774L167.343 20.5784C164.15 33.9653 161.535 47.4904 159.508 61.1029C159.314 62.4075 158.946 63.9467 157.708 64.4035C156.821 64.7315 155.788 64.3125 155.158 63.6069C154.527 62.9014 154.226 61.9649 154.016 61.0422C153.497 58.7657 153.434 56.3864 153.833 54.086C154.077 52.6792 154.489 51.3109 154.901 49.9422L154.901 49.9416C155.271 48.7131 155.641 47.484 155.89 46.2266C156.139 44.9695 156.264 43.6912 156.385 42.4153C157.032 35.6303 157.58 28.8362 158.03 22.0354C158.094 21.0743 158.151 20.0828 157.837 19.1726C157.277 17.5539 155.645 16.5304 153.998 16.0615C153.714 15.9806 153.426 15.9118 153.137 15.843C152.466 15.6829 151.795 15.5228 151.183 15.2109C150.307 14.765 149.548 13.8952 149.612 12.9149ZM152.672 12.6553C155.001 13.1468 157.277 13.8888 159.448 14.8647C159.885 15.0613 160.344 15.2912 160.581 15.7082C160.774 16.0487 160.785 16.4589 160.79 16.8503C160.859 21.4468 160.873 26.0557 160.386 30.6269C160.095 33.3642 159.625 36.0776 159.154 38.7907C159.006 39.6493 158.857 40.5082 158.714 41.3675C158.006 45.6208 157.436 49.8967 157.005 54.1868C156.692 57.2996 156.463 60.517 157.432 63.4916C157.928 63.401 158.12 62.8026 158.214 62.3064L167.162 15.1425C167.379 13.9997 167.595 12.8182 167.34 11.6834C166.893 9.69687 165.129 8.31539 163.429 7.19451C160.156 5.03701 156.673 3.19944 153.044 1.7165C152.742 5.3539 152.618 9.0058 152.672 12.6553ZM157.274 43.6305C158.912 35.2197 159.652 26.6339 159.477 18.0666C159.464 17.4194 159.43 16.7239 159.034 16.2118C158.744 15.8366 158.301 15.6168 157.868 15.423C156.242 14.6948 154.533 14.1531 152.785 13.8116C152.279 13.7128 151.536 13.82 151.558 14.3351L157.841 16.9312C158.21 17.0836 158.602 17.2559 158.81 17.596C159.015 17.9294 158.995 18.3484 158.968 18.7385L157.274 43.6305ZM151.427 0.884513C150.909 0.541 150.16 0.894964 149.872 1.44546C149.584 1.99596 149.627 2.65467 149.693 3.27259C149.789 4.17941 149.915 5.08657 150.041 5.99407C150.392 8.51126 150.743 11.0295 150.445 13.5416C150.92 13.7048 151.45 13.3697 151.681 12.9233C151.911 12.477 151.917 11.9528 151.918 11.4502L151.934 2.39139C151.935 1.83785 151.888 1.19027 151.427 0.884513ZM156.079 63.2873C155.794 61.0486 155.719 58.7832 155.856 56.5307C155.93 55.3262 156.063 54.1257 156.197 52.9256C156.374 51.3385 156.55 49.7521 156.587 48.1566C155.282 52.0407 154.79 56.1956 155.15 60.277C155.243 61.3385 155.417 62.452 156.079 63.2873ZM156.797 45.8622C157.007 45.7681 157.095 45.4732 156.972 45.2793C156.758 45.3845 156.668 45.6822 156.786 45.8882L156.797 45.8622ZM154.846 26.4097C144.461 20.0053 132.718 16.168 120.975 12.8569C117.222 11.7984 113.436 10.784 109.56 10.3498C98.0751 9.06344 86.432 13.0258 76.8824 19.5344C73.0525 22.1449 69.3575 25.3556 67.7026 29.685C66.4749 32.8973 66.4836 36.4336 66.602 39.8704C67.0102 51.7239 68.5312 63.5075 70.0502 75.2702C71.2382 75.0558 71.3555 73.4131 71.1833 72.2187C69.6039 61.2492 68.718 50.1796 68.5333 39.0985C68.4817 35.9913 68.4979 32.8057 69.5732 29.89C71.5197 24.6116 76.5403 21.1599 81.4664 18.4432C87.6716 15.0218 94.4164 12.1453 101.5 11.9929C110.082 11.8078 118.215 15.6141 125.711 19.7946C129.89 22.125 134.128 24.7279 136.786 28.7061C139.2 32.3189 140.077 36.7215 140.711 41.02C142.721 54.6624 142.795 68.5071 142.864 82.2969C142.867 82.8548 142.833 83.494 142.396 83.8408C142.097 84.0778 141.689 84.1075 141.308 84.1274L127.309 84.8562C133.833 86.7316 141.069 85.9919 147.078 82.8353L162.633 74.6634C164.085 73.9009 165.584 73.0996 166.584 71.8004C167.961 70.0123 168.159 67.6067 168.224 65.3508C168.464 57.0185 167.63 48.6562 165.751 40.5352C166.403 49.3203 166.493 58.1468 166.022 66.9433C165.941 68.4454 165.821 70.0214 165.004 71.2846C164.131 72.634 162.615 73.3982 161.169 74.1004L144.382 82.2598C145.077 69.2161 144.538 56.1073 142.775 43.165C142.182 38.8119 141.425 34.3978 139.433 30.4823C134.726 21.2287 124.305 16.6511 114.675 12.7726C129.073 16.9848 143.636 21.2668 156.589 28.8342C156.757 27.7888 155.747 26.9656 154.846 26.4097ZM208.496 66.2252C209.242 68.1488 210.291 70.1994 212.22 70.9326C212.677 70.968 212.95 70.3619 212.8 69.9291C212.675 69.5673 212.38 69.3041 212.091 69.0452C212.058 69.0158 212.026 68.9868 211.993 68.9575C211.969 68.9359 211.945 68.914 211.922 68.8921C210.695 67.7517 210.092 66.14 209.499 64.5525C209.381 64.2383 209.264 63.9255 209.143 63.617C208.407 61.7501 207.255 59.8 205.327 59.242C204.14 58.8985 202.868 59.1547 201.67 59.4571C194.897 61.1659 188.497 64.333 183.031 68.6807C180.653 70.5719 178.247 73.2533 178.814 76.238C179.028 77.3653 179.654 78.3662 180.284 79.3249C181.484 81.149 182.747 82.9313 184.072 84.6671C184.651 85.4263 185.261 86.1935 186.08 86.6854C187.465 87.5184 189.207 87.4277 190.802 87.1641C199.045 85.8015 206.1 80.6788 212.813 75.7054C213.163 75.4465 213.526 75.1708 213.707 74.7757C213.888 74.3802 213.811 73.8301 213.427 73.6261C212.987 73.3922 212.468 73.7151 212.075 74.0226C205.828 78.9137 199.155 83.6929 191.409 85.4111C189.941 85.7368 188.322 85.9286 187.001 85.2095C186.013 84.6718 185.345 83.7047 184.715 82.7722L180.807 76.9905C180.478 76.5037 180.137 75.9802 180.125 75.3926C180.113 74.805 180.587 74.1692 181.17 74.2451C186.648 74.9574 192.151 75.4694 197.666 75.7799C198.105 75.8045 198.564 75.8244 198.964 75.6417C199.479 75.4064 199.793 74.8852 200.068 74.39C202.403 70.1812 204.186 65.667 205.358 60.9991C206.917 62.1166 207.644 64.0091 208.338 65.815C208.39 65.9522 208.443 66.0894 208.496 66.2252ZM203.675 60.6296C202.631 64.5336 201.088 68.3035 199.093 71.8179C198.759 72.4071 198.388 73.0139 197.804 73.3561C197.06 73.7916 196.134 73.7097 195.278 73.614L181.634 72.0916C183.898 69.1004 187.261 67.159 190.62 65.491C193.801 63.912 197.066 62.5036 200.397 61.2735C201.451 60.8841 202.557 60.5069 203.675 60.6296ZM128.284 143.906C128.621 147.081 128.976 150.322 130.325 153.216L128.117 133.561C128.026 132.752 128.053 131.722 128.797 131.392C129.427 138.79 130.366 146.162 131.611 153.481C131.758 154.35 130.453 154.847 129.72 154.357C128.987 153.868 128.752 152.915 128.586 152.049C127.371 145.742 126.703 139.329 126.592 132.907C125.045 133.212 123.961 134.711 123.648 136.256C123.335 137.801 123.637 139.396 123.938 140.943L126.848 155.884C127.301 158.213 127.755 160.62 127.255 162.94C125.33 154.151 123.782 145.28 122.618 136.359C107.848 145.39 88.8161 147.07 72.6925 140.765C69.1711 139.388 65.6736 137.562 63.3479 134.581C61.5157 132.233 60.5381 129.317 60.0256 126.383C58.2066 115.962 61.9344 105.332 66.994 96.0422C67.1258 95.8001 67.259 95.5574 67.3925 95.314C69.2031 92.0113 71.0895 88.5705 70.9453 84.835C70.9358 84.5882 70.9183 84.3364 70.9011 84.0832C70.8209 82.9205 70.7383 81.7245 71.4007 80.8028C72.289 82.4186 72.6271 84.3307 72.3473 86.1534C87.6382 85.4954 102.952 85.3626 118.252 85.756C118.43 86.4595 117.411 86.7862 116.686 86.7754C102.407 86.5623 88.122 86.8057 73.8592 87.5045C73.4078 87.5268 72.9335 87.5561 72.5506 87.7968C72.1477 88.0497 71.9131 88.4936 71.6967 88.917C67.6487 96.8374 63.5875 104.873 61.631 113.55C60.6247 118.012 60.2394 122.896 62.3015 126.979C63.0839 128.528 64.1903 129.896 65.4258 131.114C72.0581 137.656 81.9896 139.662 91.3043 139.505C97.2492 139.405 103.181 138.551 108.912 136.968C114.988 135.291 121.048 132.647 125.195 127.9C127.63 125.113 129.286 121.737 130.736 118.331C133.504 111.828 135.627 105.05 137.063 98.1302C137.963 98.3197 137.976 99.5919 137.768 100.488C135.199 111.57 132.213 123.384 123.752 130.988C116.11 137.856 105.341 139.987 95.0819 140.561C89.1559 140.893 83.1365 140.789 77.3965 139.278C71.6569 137.768 66.1762 134.746 62.5324 130.061C63.5953 134.113 67.1953 137.005 70.9432 138.877C80.7838 143.791 92.4046 143.531 103.271 141.823C110.509 140.685 117.939 138.818 123.572 134.132C128.387 130.127 131.455 124.406 133.765 118.585C136.321 112.141 138.095 105.386 139.034 98.5175C139.619 98.1481 140.052 99.1813 139.978 99.869C138.712 111.641 134.202 123.048 127.075 132.502L128.284 143.906ZM121.441 164.037C120.813 162.976 120.409 161.784 120.262 160.561L119.36 163.618L117.083 154.935C116.906 154.261 116.476 153.419 115.796 153.563C115.133 153.704 115.059 154.613 115.158 155.283C115.654 158.651 116.6 161.953 117.962 165.073L115.541 162.948C115.424 163.96 115.69 165.011 116.275 165.845C115.013 164.916 113.322 164.599 111.81 165.009C112.891 166.51 114.357 167.73 116.029 168.52L113.984 165.664C115.637 166.619 117.369 167.437 119.158 168.107L117.424 165.933L119.566 166.527C117.927 162.798 116.257 158.928 116.297 154.855C116.917 158.168 117.826 161.427 119.008 164.584C119.208 165.119 119.431 165.672 119.858 166.051C120.284 166.431 120.978 166.574 121.425 166.218C121.773 165.942 121.874 165.466 121.953 165.029L122.918 159.679L123.978 166.313C124.781 164.284 127.393 163.776 129.576 163.762C132.457 163.744 135.361 164.062 138.257 164.378H138.257H138.257C143.478 164.949 148.674 165.517 153.675 164.113C153.528 164.886 153.272 165.639 152.915 166.34C156.951 165.753 161.035 165.495 165.113 165.57C166.835 165.602 168.563 165.693 170.291 165.784C174.857 166.023 179.424 166.263 183.899 165.415L154.203 165.154C154.76 165.121 155.188 164.473 154.998 163.948C154.807 163.422 154.064 163.198 153.615 163.529C153.323 162.601 152.01 162.188 151.239 162.782C151.686 161.404 152.57 160.172 153.732 159.306C152.42 159.236 151.089 159.637 150.035 160.42L153.229 145.638C152.959 145.405 152.508 145.561 152.309 145.857C152.112 146.149 152.089 146.52 152.068 146.873L152.068 146.884C151.769 151.932 149.989 156.883 147.005 160.966L145.834 157.576L144.155 161.625C143.394 161.035 142.314 160.887 141.422 161.248C141.65 162.114 142.342 162.842 143.196 163.113L143.593 162.049L146.216 163.806C145.214 162.755 144.997 161.036 145.706 159.769L147.293 162.432L150.37 156.346C150.388 158.79 149.34 161.099 148.314 163.317C149.43 162.443 150.389 161.37 151.132 160.163C151.849 161.434 151.066 163.137 149.818 163.894C148.57 164.65 147.027 164.691 145.569 164.629C143.345 164.535 141.104 164.256 138.866 163.977C133.839 163.35 128.825 162.725 124.05 164.205L123.362 157.856C122.31 159.757 121.652 161.874 121.441 164.037ZM151.401 164.206C151.293 164.077 151.294 163.87 151.402 163.742L151.489 163.775C151.635 163.426 152.248 163.454 152.361 163.815C152.078 164.019 151.746 164.155 151.401 164.206ZM167.625 96.7501C164.166 95.0022 160.05 95.4738 156.211 96C155.127 96.1487 154.021 96.3048 153.038 96.7878C152.055 97.2709 151.2 98.1457 151.03 99.2275C141.654 98.0567 132.669 93.9298 125.672 87.5797C124.153 86.2016 122.603 84.239 123.286 82.3053C123.501 81.6975 123.919 81.1848 124.353 80.7084C127.616 77.1317 132.113 74.9806 136.492 72.9158C131.529 73.351 126.768 75.7647 123.483 79.5103C122.731 80.3686 122.036 81.3277 121.777 82.4395C121.137 85.1849 123.27 87.7604 125.403 89.6024C132.213 95.4792 140.778 99.2956 149.701 100.429C150.236 100.497 150.264 101.249 150.215 101.786C149.998 104.176 151.3 106.508 153.105 108.088C154.911 109.669 157.172 110.618 159.415 111.468C166.364 114.099 173.575 116.038 180.906 117.245C181.391 117.324 182.056 117.287 182.158 116.806C180.466 115.687 178.43 115.261 176.439 114.844C176.331 114.821 176.224 114.799 176.116 114.776C171.068 113.713 166.088 112.329 161.215 110.635C159.216 109.94 157.212 109.181 155.469 107.98C153.726 106.779 152.246 105.083 151.688 103.042C151.413 102.034 151.787 100.528 152.824 100.655C157.048 101.172 161.388 101.682 165.513 100.634C166.446 100.397 167.419 100.04 167.988 99.2626C168.557 98.4855 168.484 97.1846 167.625 96.7501ZM156.97 99.5417C155.52 99.2919 154.038 99.2251 152.572 99.3431C153.285 97.9896 155.025 97.6333 156.541 97.4267C159.835 96.9783 163.266 96.5407 166.422 97.5851C166.631 97.6542 166.854 97.7422 166.967 97.9306C167.115 98.1788 167.007 98.5165 166.796 98.7141C166.585 98.912 166.297 99.0016 166.019 99.0795C163.086 99.899 159.971 100.058 156.97 99.5417ZM108.989 167.832C111.415 167.764 113.856 168.3 116.031 169.379C115.45 170.214 114.282 170.331 113.265 170.37L86.6835 171.379C86.4398 171.349 86.3939 170.973 86.5665 170.798C86.7391 170.623 87.0088 170.601 87.2539 170.589L113.202 169.323C111.703 169.186 110.24 168.668 108.989 167.832ZM57.8341 79.9226C57.4555 81.7343 58.988 83.6669 60.8337 83.8038C57.8156 88.3524 52.379 90.5968 47.1555 92.1816C43.8953 93.1703 40.2788 93.9824 37.1707 92.5871C36.785 92.8228 37.1963 93.4033 37.6035 93.5995C40.6281 95.0568 44.2139 94.2447 47.4313 93.2846C52.1491 91.8765 57.0126 90.0568 60.2229 86.3237C60.3543 86.1709 60.4851 86.0139 60.6169 85.8554V85.8551H60.6173C61.4435 84.862 62.3052 83.8264 63.5474 83.5964C67.5472 82.8568 70.8785 80.3518 74.17 77.8764L74.1704 77.8761L74.1707 77.8757C74.9171 77.3144 75.6614 76.7545 76.4111 76.2175C80.9689 72.9509 86.0238 70.3794 91.3474 68.6197C91.8177 68.464 92.3894 68.1758 92.3476 67.6822C85.747 68.288 79.9774 72.2241 74.6575 76.178L74.4802 76.3102C70.8647 78.998 67.0864 81.8067 62.6376 82.4729C64.0908 81.3267 63.7841 78.6784 62.1444 77.8198C60.505 76.9611 58.213 78.111 57.8341 79.9226ZM59.0659 81.0297C58.7692 80.1509 59.2274 79.1055 60.0412 78.6605C60.2721 78.5341 60.5303 78.4498 60.7939 78.4495C61.6626 78.4488 62.2974 79.3782 62.3032 80.2473C62.3089 81.1163 61.8683 81.9176 61.4402 82.6741C60.4386 82.5207 59.3902 81.9895 59.0659 81.0297ZM157.836 61.6655C157.59 61.3914 157.665 61.0226 157.744 60.6404C157.799 60.3703 157.856 60.0936 157.802 59.8394C157.754 59.6186 157.626 59.4308 157.497 59.2424C157.382 59.0755 157.268 58.9083 157.209 58.7175C157.222 58.4653 157.56 58.3359 157.789 58.4407C158.019 58.5452 158.148 58.792 158.228 59.0313C158.521 59.9051 158.37 60.9151 157.836 61.6655ZM135.584 42.4928C136.2 41.0348 137.419 39.7417 138.973 39.4457C139.477 39.3499 139.461 38.5203 139.02 38.2597C138.579 37.9988 138.013 38.1532 137.551 38.373C135.397 39.3985 134.037 41.6551 133.504 43.9801C132.972 46.3055 133.148 48.727 133.327 51.1056L134.279 63.7495C134.312 64.1793 134.351 64.6307 134.59 64.9894C135.078 65.7196 136.124 65.7425 137 65.6869L141.435 65.4051C140.45 64.6324 139.126 64.3074 137.895 64.5346C137.176 64.6678 136.453 64.1932 136.072 63.5688C135.691 62.9445 135.579 62.1975 135.485 61.4723C134.867 56.7272 134.64 51.9312 134.807 47.1486C134.863 45.5672 134.97 43.9508 135.584 42.4928ZM146.91 154.723C146.658 154.905 146.406 154.489 146.369 154.18C144.655 139.771 144.397 125.233 144.14 110.725L143.967 100.945C143.962 100.666 143.966 100.361 144.145 100.147C144.453 99.7797 145.101 99.9482 145.371 100.345C145.64 100.742 145.64 101.256 145.631 101.736C145.367 116.013 145.541 130.317 146.908 144.531C146.924 144.704 146.941 144.877 146.958 145.05C147.271 148.279 147.59 151.557 146.91 154.723ZM132.659 63.8975C132.284 63.6912 131.82 63.8078 131.41 63.9295C112.406 69.5498 93.4459 75.3454 74.765 81.9601C74.4155 82.0838 74.0157 82.2622 73.9354 82.6246C73.8505 83.0079 74.2115 83.3743 74.5978 83.4454C74.9842 83.5165 75.3749 83.3787 75.7437 83.2428C94.465 76.356 113.468 70.2352 132.689 64.9007C133.102 64.7861 133.035 64.1035 132.659 63.8975Z" fill="#00160A"/>
+                    <path class="animate__animated animate__swing" fill-rule="evenodd" clip-rule="evenodd" d="M200.366 149.874C199.923 150.068 199.444 150.249 198.968 150.167C198.492 150.086 198.046 149.638 198.142 149.165C199.016 144.834 197.919 140.144 195.212 136.651C194.264 135.427 193.134 134.351 192.21 133.108C191.628 132.325 191.11 131.341 191.405 130.411C191.825 129.088 193.518 128.766 194.903 128.671C198.123 128.452 201.344 128.232 204.564 128.013C206.047 127.912 207.756 127.897 208.747 129.006C211.504 132.094 216.878 132.302 219.865 129.435C220.327 128.992 220.909 129.875 220.891 130.515C220.833 132.529 220.003 134.51 218.609 135.964C218.28 136.307 217.859 136.643 217.387 136.594C216.914 136.545 216.565 135.866 216.942 135.577C217.751 134.956 218.574 134.319 219.141 133.471C219.708 132.624 219.983 131.513 219.597 130.57C217.516 133.201 215.416 135.817 213.297 138.417C209.622 142.924 205.691 147.535 200.366 149.874ZM206.174 136.61C205.645 136.756 205.081 136.644 204.553 136.494C200.752 135.421 197.251 132.451 193.363 133.146C197.896 136.797 200.303 142.919 199.47 148.679C202.457 148.04 204.816 145.81 206.931 143.607C210.063 140.345 213.036 136.932 215.837 133.383C213.824 133.366 211.818 132.785 210.107 131.724C207.994 132.247 208.272 136.029 206.174 136.61ZM208.935 130.613C207.675 129.129 205.413 129.175 203.474 129.345C200.945 129.567 198.416 129.79 195.887 130.012C194.86 130.102 193.681 130.282 193.146 131.163C197.523 132.079 201.79 133.519 205.828 135.44C206.348 133.809 207.388 132.348 208.761 131.325C208.915 131.209 209.092 131.062 209.071 130.87C209.061 130.773 208.998 130.689 208.935 130.613Z" fill="#FFB61D"/>
+                    <path class="animate__animated animate__swing"  fill-rule="evenodd" clip-rule="evenodd" d="M21.4439 95.218C17.6348 93.6946 13.0955 94.1466 9.6614 96.3908C9.32895 96.6079 8.85096 96.3658 8.68638 96.0045C8.52181 95.6427 8.58336 95.2224 8.66754 94.8343C9.76432 89.7777 14.1336 85.9087 18.9927 84.1305C23.8517 82.3526 29.1667 82.3475 34.3318 82.6516C34.8443 82.6816 35.3799 82.7217 35.8171 82.9911C36.2544 83.2601 36.5487 83.8355 36.3306 84.3004C34.2988 88.6353 32.7683 93.2044 31.7793 97.8882C31.6188 98.6477 30.8333 99.1517 30.0597 99.2151C29.286 99.2785 28.5279 98.9922 27.8257 98.6612C25.6375 97.6297 23.6901 96.1164 21.4439 95.218ZM21.8793 90.1017C21.5398 90.3774 21.0092 90.2318 20.6898 89.9331C20.3704 89.6341 20.1884 89.2208 19.9373 88.8625C18.5905 86.9413 15.4999 87.1007 13.6679 88.5665C11.8359 90.0322 10.9494 92.3485 10.1422 94.5515C15.5167 92.217 22.1364 93.0548 26.7601 96.6547C27.3911 97.1462 28.0175 97.6998 28.7948 97.8892C29.5722 98.0783 30.5515 97.7382 30.7484 96.9629C31.8005 92.8205 33.0967 88.7398 34.6282 84.7497C31.6893 88.4023 25.5178 87.1456 21.8793 90.1017ZM20.7098 87.8943C21.0116 88.2732 21.5596 88.374 22.0366 88.2884C22.5136 88.2027 22.947 87.9651 23.3915 87.7719C24.9218 87.1068 26.6168 86.9585 28.2572 86.6544C29.8979 86.35 31.5901 85.8352 32.7451 84.6311C30.1392 84.6233 27.5334 84.6156 24.9275 84.6075C22.3088 84.5997 19.4868 84.6554 17.383 86.2148C18.6637 86.2613 19.9117 86.8914 20.7098 87.8943Z" fill="#FFB61D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M143.821 94.8691C143.815 92.5771 143.809 90.2848 143.803 87.9928C143.801 87.3347 143.8 86.6764 143.798 86.018C143.797 85.5642 143.873 84.9962 144.304 84.855C144.63 84.7484 144.99 84.9827 145.142 85.2905C145.295 85.598 145.293 85.9563 145.288 86.2995C145.24 89.4983 145.192 92.6968 145.145 95.8953C145.138 96.3554 145.061 96.9214 144.63 97.0829C143.912 96.676 143.824 95.6947 143.821 94.8691Z" fill="#00160A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M139.245 92.7474C138.913 92.8931 138.742 92.3463 138.793 91.9876C138.977 90.7042 139.161 89.4178 139.473 88.1594C139.667 87.3759 139.947 86.5517 140.594 86.0693C141.242 85.5866 142.353 85.6712 142.669 86.4135C142.823 86.7732 142.759 87.1841 142.688 87.5688C142.253 89.9498 141.666 92.3035 140.933 94.6103C140.902 94.7081 140.868 94.8102 140.794 94.8813C140.613 95.0543 140.288 94.938 140.162 94.7215C140.038 94.5051 140.054 94.2385 140.074 93.9893C140.372 93.9674 140.511 93.6168 140.582 93.3269C140.874 92.1423 141.167 90.9581 141.459 89.7735C141.686 88.8518 141.894 87.8021 141.365 87.0139C140.821 87.3486 140.617 88.0256 140.455 88.6431C140.129 89.8854 139.804 91.1276 139.479 92.3699C139.44 92.5182 139.385 92.6857 139.245 92.7474Z" fill="#00160A"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer py-6 px-10 mt-6 lg:px-24">
+        <div class="sm:flex sm:place-content-around lg:grid lg:grid-cols-2 2xl:w-1/2 2xl:place-self-center">
+          <div class="lg:grid lg:grid-rows-2">
+            <div class="lg:row-start-1">
+              <img class="size-12 lg:size-20" src="assets/favicon-vert.png" alt="">
+            </div>
+            <div class="lg:grid lg:grid-cols-2 lg:row-start-2 lg:justify-items-start lg:items-center">
+              <div class="flex flex-col gap-1 pt-4 text-slate-50 font-light lg:text-lg">
+                <a class="links-white" href="index.html"><span class="undeline-links-white">Home</span></a>
+                <a class="links-white" href=""><span class="undeline-links-white">About</span></a>
+                <a class="links-white" href=""><span class="undeline-links-white">Work</span></a>
+              </div>
+              <div>
+                <div class="flex gap-6 py-6 items-start lg:hidden">
+                  <div class="group hover:scale-125 ease-in-out duration-200">
+                    <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"/>
+                    </svg>
+                  </div>
+                  <div class="group hover:scale-125 ease-in-out duration-200">
+                    <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                    </svg>
+                  </div>
+                  <div class="group hover:scale-125 ease-in-out duration-200">
+                    <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.443 5.34998C8.082 5.34998 8.673 5.39998 9.213 5.54798C9.754 5.64698 10.197 5.84498 10.59 6.09198C10.984 6.33931 11.279 6.68564 11.475 7.13098C11.672 7.57598 11.771 8.12098 11.771 8.71398C11.771 9.40698 11.623 9.99998 11.279 10.445C10.984 10.891 10.492 11.286 9.902 11.583C10.738 11.831 11.377 12.276 11.771 12.869C12.165 13.462 12.41 14.205 12.41 15.046C12.41 15.739 12.262 16.332 12.016 16.827C11.771 17.322 11.377 17.767 10.934 18.064C10.4526 18.382 9.9207 18.6159 9.361 18.756C8.771 18.905 8.181 19.004 7.591 19.004H1V5.34998H7.443ZM7.049 10.89C7.59 10.89 8.033 10.742 8.377 10.495C8.721 10.248 8.869 9.80198 8.869 9.25798C8.869 8.96098 8.819 8.66398 8.721 8.46698C8.623 8.26998 8.475 8.11998 8.279 7.97198C8.07859 7.85942 7.86306 7.77624 7.639 7.72498C7.393 7.67498 7.148 7.67498 6.852 7.67498H4V10.891L7.049 10.89ZM7.197 16.728C7.492 16.728 7.787 16.678 8.033 16.629C8.279 16.579 8.525 16.481 8.721 16.332C8.9206 16.1863 9.08808 16.0012 9.213 15.788C9.311 15.541 9.41 15.244 9.41 14.898C9.41 14.205 9.213 13.71 8.82 13.364C8.426 13.067 7.885 12.919 7.246 12.919H4V16.729L7.197 16.728ZM16.689 16.678C17.0823 17.074 17.6723 17.272 18.459 17.272C19 17.272 19.492 17.124 19.885 16.877C20.279 16.5796 20.525 16.2826 20.623 15.986H23.033C22.639 17.173 22.049 18.014 21.263 18.558C20.475 19.053 19.541 19.35 18.41 19.35C17.6865 19.351 16.9691 19.2167 16.295 18.954C15.6881 18.7276 15.1472 18.3537 14.721 17.866C14.2633 17.4113 13.9256 16.8502 13.738 16.233C13.492 15.59 13.393 14.898 13.393 14.106C13.393 13.364 13.492 12.672 13.738 12.028C13.974 11.4076 14.3244 10.837 14.771 10.346C15.213 9.90098 15.754 9.50598 16.344 9.25798C17.0008 8.99428 17.7023 8.85982 18.41 8.86198C19.246 8.86198 19.984 9.01098 20.623 9.35698C21.263 9.70298 21.754 10.099 22.147 10.693C22.541 11.237 22.837 11.88 23.033 12.573C23.131 13.265 23.18 13.958 23.131 14.749H16C16 15.541 16.295 16.283 16.689 16.679M19.787 11.485C19.443 11.139 18.902 10.941 18.262 10.941C17.8867 10.9353 17.5156 11.0201 17.18 11.188C16.885 11.337 16.689 11.535 16.492 11.733C16.3098 11.9234 16.1899 12.1648 16.148 12.425C16.098 12.673 16.049 12.87 16.049 13.068H20.475C20.377 12.326 20.131 11.832 19.787 11.485ZM15.459 6.28998H20.967V7.62598H15.46L15.459 6.28998Z"/>
+                      </svg>
+                  </div>
+                  <div class="group hover:scale-125 ease-in-out duration-200">
+                    <svg class="stroke-zinc-100 hover:stroke-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 12C22.0016 13.3172 21.7423 14.6216 21.2369 15.8379C20.7315 17.0542 19.9901 18.1584 19.0555 19.0865C18.1285 20.0118 17.0282 20.7453 15.8176 21.2452C14.607 21.7451 13.3098 22.0016 12 22C6.47701 22 2.00001 17.523 2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001C13.3098 1.99839 14.607 2.25487 15.8176 2.75478C17.0282 3.25469 18.1285 3.98824 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22.0001 12C20.5411 12 16.5161 11.45 12.9136 13.0315C9.00014 14.75 6.16664 17.416 4.93164 19.0735" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.25 2.72699C9.815 4.17149 13.23 7.84899 14.5 11.5C15.77 15.151 16.24 19.64 16.53 20.9175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2.07617 10.75C3.96517 10.864 8.96567 10.9665 12.1657 9.59999C15.3657 8.23349 18.1192 5.71999 19.0637 4.92249M2.74917 15.8065C3.63047 17.9393 5.21963 19.7035 7.24917 20.802" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001M16 2.83201C17.139 3.3299 18.1752 4.03579 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12C22 13.231 21.7775 14.4105 21.37 15.5M12 22C13.3098 22.0016 14.607 21.7451 15.8176 21.2452C17.0282 20.7453 18.1285 20.0118 19.0555 19.0865" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 justify-center">
+                  <p class="text-slate-50 text-2xl">Contact</p>
+                  <div class="flex gap-4 items-center">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="stroke-slate-50 size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="links-white text-slate-50 font-light text-sm" href="mailto:adamusblanka@gmail.com"><span class="undeline-links-white">adamusblanka@gmail.com</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:grid lg:grid-rows-2 lg:justify-end lg:items-end">
+            <div class="hidden sm:block lg:justify-end lg:justify-items-end lg:items-end">
+              <svg class="lg:size-36" width="140" height="142" viewBox="0 0 140 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M129.136 104.365C126.991 108.913 124.514 112.849 121.577 116.616C117.957 121.252 113.701 125.112 109.03 128.52C104.499 131.828 99.683 134.723 94.3161 136.55C91.7931 137.403 89.3403 138.466 86.7945 139.23C83.1199 140.335 79.3337 140.867 75.5212 141.338C71.9703 141.775 68.4447 141.688 64.9199 141.55C58.839 141.311 52.8792 140.177 47.1033 138.295C41.8377 136.58 36.9318 133.986 32.2426 131.098C26.227 127.396 21.0016 122.719 16.4782 117.231C12.3353 112.204 9.07686 106.663 6.24953 100.831C6.07806 100.478 5.97674 100.087 5.87193 99.7063C4.85792 96.0116 3.15489 92.5288 2.49887 88.726C1.8981 85.242 1.08872 81.7686 0.836761 78.2556C0.372502 71.7656 0.782127 65.2815 2.25129 58.9122C2.84346 56.3449 3.5662 53.7974 4.40867 51.3011C5.60438 47.7589 6.89667 44.2409 9.05802 41.1897C9.22496 41.1407 9.31831 41.1003 9.41518 41.0876C9.50829 41.0752 9.62188 41.0596 9.6977 41.0998C48.9306 61.836 88.1614 82.5771 127.39 103.322C127.902 103.593 128.39 103.918 129.136 104.365Z" fill="#6699F2"/>
+                <path d="M129.962 98.4878C132.761 94.5838 135.951 85.3242 136.504 79.6181C133.785 83.8913 128.054 94.9973 127.449 97.1569L129.962 98.4878ZM125.265 96.0118C125.554 95.698 125.722 95.5782 125.809 95.4144C129.482 88.5136 133.196 81.6336 136.758 74.6762C137.398 73.4248 137.632 71.8552 137.663 70.4268C137.718 67.684 137.591 64.9288 137.355 62.1949C137.151 59.7958 136.691 57.4171 136.272 54.5521L116.712 91.4818L125.265 96.0118ZM114.322 90.1954C114.607 89.8341 114.825 89.6315 114.957 89.3824C121.465 77.1177 127.954 64.8433 134.48 52.5879C134.989 51.6395 135.103 50.7943 134.748 49.7736C134.041 47.718 133.508 45.5989 132.759 43.5549C132.201 42.024 131.425 40.5729 130.585 38.7348L105.737 85.6484L114.322 90.1954ZM103.41 84.4197L129.078 35.9585C128.118 34.4123 127.231 32.886 126.248 31.4259C125.221 29.8999 124.101 28.4372 122.863 26.7289L94.7394 79.827L103.41 84.4197ZM103.802 10.8147C101.029 15.0191 74.0164 66.3942 73.3906 68.6694C74.7425 69.3854 76.1067 70.1655 77.5209 70.8412C78.9928 71.545 80.3011 72.6503 81.9334 72.8899L111.901 16.3101C109.313 14.3642 106.919 12.261 103.802 10.8147ZM92.9943 78.5368L121.197 25.2888C119.116 22.2285 116.635 19.6885 113.472 17.5774C103.9 35.6491 94.339 53.6995 84.7817 71.7518C84.4574 72.3642 84.1677 72.9949 83.8743 73.623C83.8386 73.6981 83.874 73.8102 83.8897 73.9031C83.9051 74 83.9358 74.0944 83.974 74.2432C86.5709 75.6187 89.1854 77.0128 91.8137 78.3809C92.0528 78.5051 92.3786 78.4621 92.9943 78.5368ZM101.437 9.51502C90.4423 3.95141 79.0466 1.641 67.0945 2.4863C51.672 3.57668 38.2447 9.58975 26.624 19.8071C22.3142 23.5964 14.4955 33.8728 13.7579 36.9134L70.8961 67.1767L101.437 9.51502ZM10.8314 37.5254C12.4698 34.895 13.5568 32.3202 15.3136 29.9909C17.4381 27.1738 19.5432 24.3601 21.8945 21.729C25.2569 17.9653 29.1504 14.8019 33.3509 12.0771C36.5561 9.99873 39.9589 8.19354 43.3935 6.51383C47.3507 4.5788 51.5159 3.23386 55.8348 2.20758C59.6938 1.29069 63.5571 0.657395 67.4737 0.528709C71.3859 0.400617 75.3174 0.576378 79.2263 0.824511C82.4395 1.02852 85.6416 1.45918 88.7114 2.5614C90.8177 3.31768 92.93 4.08372 95.0891 4.66202C98.9534 5.69692 102.301 7.80152 105.736 9.69248C112.296 13.3026 117.957 17.9988 122.882 23.7061C126.765 28.2064 129.953 33.0917 132.572 38.3746C135.201 43.6825 137.049 49.263 138.236 55.1069C139.339 60.5472 139.827 66.0097 139.568 71.5259C139.253 78.2055 138.252 84.7792 135.667 91.0288C135.107 92.3843 134.732 93.8219 134.108 95.1441C133.177 97.1008 132.096 98.9865 131.18 100.717C130.818 100.836 130.725 100.88 130.63 100.893C130.537 100.904 130.428 100.911 130.35 100.87C91.1402 80.1385 51.9341 59.4048 12.7305 38.6664C12.214 38.3934 11.7262 38.0651 10.8314 37.5254Z" fill="#6699F2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="hidden lg:flex gap-6 py-6 items-start">
+                <div class="group hover:scale-125 ease-in-out duration-200">
+                  <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"/>
+                  </svg>
+                </div>
+                <div class="group hover:scale-125 ease-in-out duration-200">
+                  <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                  </svg>
+                </div>
+                <div class="group hover:scale-125 ease-in-out duration-200">
+                  <svg class="fill-zinc-100 group-hover:fill-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.443 5.34998C8.082 5.34998 8.673 5.39998 9.213 5.54798C9.754 5.64698 10.197 5.84498 10.59 6.09198C10.984 6.33931 11.279 6.68564 11.475 7.13098C11.672 7.57598 11.771 8.12098 11.771 8.71398C11.771 9.40698 11.623 9.99998 11.279 10.445C10.984 10.891 10.492 11.286 9.902 11.583C10.738 11.831 11.377 12.276 11.771 12.869C12.165 13.462 12.41 14.205 12.41 15.046C12.41 15.739 12.262 16.332 12.016 16.827C11.771 17.322 11.377 17.767 10.934 18.064C10.4526 18.382 9.9207 18.6159 9.361 18.756C8.771 18.905 8.181 19.004 7.591 19.004H1V5.34998H7.443ZM7.049 10.89C7.59 10.89 8.033 10.742 8.377 10.495C8.721 10.248 8.869 9.80198 8.869 9.25798C8.869 8.96098 8.819 8.66398 8.721 8.46698C8.623 8.26998 8.475 8.11998 8.279 7.97198C8.07859 7.85942 7.86306 7.77624 7.639 7.72498C7.393 7.67498 7.148 7.67498 6.852 7.67498H4V10.891L7.049 10.89ZM7.197 16.728C7.492 16.728 7.787 16.678 8.033 16.629C8.279 16.579 8.525 16.481 8.721 16.332C8.9206 16.1863 9.08808 16.0012 9.213 15.788C9.311 15.541 9.41 15.244 9.41 14.898C9.41 14.205 9.213 13.71 8.82 13.364C8.426 13.067 7.885 12.919 7.246 12.919H4V16.729L7.197 16.728ZM16.689 16.678C17.0823 17.074 17.6723 17.272 18.459 17.272C19 17.272 19.492 17.124 19.885 16.877C20.279 16.5796 20.525 16.2826 20.623 15.986H23.033C22.639 17.173 22.049 18.014 21.263 18.558C20.475 19.053 19.541 19.35 18.41 19.35C17.6865 19.351 16.9691 19.2167 16.295 18.954C15.6881 18.7276 15.1472 18.3537 14.721 17.866C14.2633 17.4113 13.9256 16.8502 13.738 16.233C13.492 15.59 13.393 14.898 13.393 14.106C13.393 13.364 13.492 12.672 13.738 12.028C13.974 11.4076 14.3244 10.837 14.771 10.346C15.213 9.90098 15.754 9.50598 16.344 9.25798C17.0008 8.99428 17.7023 8.85982 18.41 8.86198C19.246 8.86198 19.984 9.01098 20.623 9.35698C21.263 9.70298 21.754 10.099 22.147 10.693C22.541 11.237 22.837 11.88 23.033 12.573C23.131 13.265 23.18 13.958 23.131 14.749H16C16 15.541 16.295 16.283 16.689 16.679M19.787 11.485C19.443 11.139 18.902 10.941 18.262 10.941C17.8867 10.9353 17.5156 11.0201 17.18 11.188C16.885 11.337 16.689 11.535 16.492 11.733C16.3098 11.9234 16.1899 12.1648 16.148 12.425C16.098 12.673 16.049 12.87 16.049 13.068H20.475C20.377 12.326 20.131 11.832 19.787 11.485ZM15.459 6.28998H20.967V7.62598H15.46L15.459 6.28998Z"/>
+                    </svg>
+                </div>
+                <div class="group hover:scale-125 ease-in-out duration-200">
+                  <svg class="stroke-zinc-100 hover:stroke-amber-600 lg:size-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22.0016 13.3172 21.7423 14.6216 21.2369 15.8379C20.7315 17.0542 19.9901 18.1584 19.0555 19.0865C18.1285 20.0118 17.0282 20.7453 15.8176 21.2452C14.607 21.7451 13.3098 22.0016 12 22C6.47701 22 2.00001 17.523 2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001C13.3098 1.99839 14.607 2.25487 15.8176 2.75478C17.0282 3.25469 18.1285 3.98824 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.0001 12C20.5411 12 16.5161 11.45 12.9136 13.0315C9.00014 14.75 6.16664 17.416 4.93164 19.0735" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.25 2.72699C9.815 4.17149 13.23 7.84899 14.5 11.5C15.77 15.151 16.24 19.64 16.53 20.9175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.07617 10.75C3.96517 10.864 8.96567 10.9665 12.1657 9.59999C15.3657 8.23349 18.1192 5.71999 19.0637 4.92249M2.74917 15.8065C3.63047 17.9393 5.21963 19.7035 7.24917 20.802" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.00001 12C1.99641 9.43587 2.98136 6.96903 4.75001 5.11251C5.68313 4.12774 6.8074 3.34376 8.05402 2.80858C9.30064 2.27339 10.6434 1.99825 12 2.00001M16 2.83201C17.139 3.3299 18.1752 4.03579 19.0555 4.91351C19.9901 5.84165 20.7315 6.94579 21.2369 8.16212C21.7423 9.37844 22.0016 10.6829 22 12C22 13.231 21.7775 14.4105 21.37 15.5M12 22C13.3098 22.0016 14.607 21.7451 15.8176 21.2452C17.0282 20.7453 18.1285 20.0118 19.0555 19.0865" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-solid border-slate-50 mt-10"></div>
+        <div>
+          <p class="text-slate-50 text-xs mt-4">© Blanka Adamus - Portfolio</p>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
