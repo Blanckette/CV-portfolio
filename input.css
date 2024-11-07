@@ -4,7 +4,7 @@
 
 :root {
     --bg-color-main: rgba(241, 239, 239, 1);
-    --footer-color: rgb(44, 60, 85);
+    --footer-color: rgb(43, 59, 84);
     --sky-blue:  rgba(110, 144, 197, 0.56);
     --dark-violet: rgba(50, 36, 57, 1);
 }
@@ -99,7 +99,37 @@ body {
         transform: scaleX(1);
         transform-origin: bottom left;
     }
-}  
+} 
+
+/* show elements on hover */
+.showme {
+  display: none;
+}
+
+.showhim:hover > .showme {
+  display: block;
+  opacity: 1;
+}
+
+/* burger menu */
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
 
 /* a {
     position: relative;
