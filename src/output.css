@@ -1062,6 +1062,11 @@ video {
   background-color: rgb(8 51 68 / var(--tw-bg-opacity));
 }
 
+.bg-cello-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 246 251 / var(--tw-bg-opacity));
+}
+
 .fill-amber-600 {
   fill: #d97706;
 }
@@ -1369,6 +1374,16 @@ video {
 .text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+
+.text-cello-50 {
+  --tw-text-opacity: 1;
+  color: rgb(244 246 251 / var(--tw-text-opacity));
+}
+
+.text-cello-900 {
+  --tw-text-opacity: 1;
+  color: rgb(43 59 84 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
