@@ -686,6 +686,10 @@ video {
   z-index: 50;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -799,6 +803,21 @@ video {
   height: 2rem;
 }
 
+.size-20 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.size-56 {
+  width: 14rem;
+  height: 14rem;
+}
+
+.size-48 {
+  width: 12rem;
+  height: 12rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -852,6 +871,14 @@ video {
   width: 100%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -868,6 +895,10 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -878,6 +909,18 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-content-end {
+  place-content: end;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-start {
@@ -892,6 +935,14 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -902,6 +953,14 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-1 {
@@ -938,6 +997,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1095,6 +1158,18 @@ video {
   fill: #f4f4f5;
 }
 
+.fill-cello-700 {
+  fill: #324b72;
+}
+
+.fill-cello-600 {
+  fill: #3d5e8c;
+}
+
+.fill-cello-950 {
+  fill: #1b2436;
+}
+
 .stroke-amber-600 {
   stroke: #d97706;
 }
@@ -1198,6 +1273,26 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1273,6 +1368,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-extralight {
@@ -1384,6 +1484,11 @@ video {
 .text-cello-900 {
   --tw-text-opacity: 1;
   color: rgb(43 59 84 / var(--tw-text-opacity));
+}
+
+.text-cello-950 {
+  --tw-text-opacity: 1;
+  color: rgb(27 36 54 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
